@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <DirectoryRef Id="FunctyExamplesFolder">
+      <Component Id="BouncingBall.xml" Guid="{4E032FE6-01D8-455A-BEA8-5AC3B5C7CC07}">
+        <File Id="BouncingBall.xml" KeyPath="yes" Source="$(var.ExamplesDir)\BouncingBall.xml" />
+      </Component>
+      <Component Id="BumpySlides.xml" Guid="{1E886B0A-148A-4673-A046-FF0A5D12833D}">
+        <File Id="BumpySlides.xml" KeyPath="yes" Source="$(var.ExamplesDir)\BumpySlides.xml" />
+      </Component>
+      <Component Id="CurveSphere01.xml" Guid="{60A31051-322F-4C03-92E9-265C8DD414E0}">
+        <File Id="CurveSphere01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\CurveSphere01.xml" />
+      </Component>
+      <Component Id="CurveSphere02.xml" Guid="{66E83BF3-FA86-41F4-8E81-3FED2128A8E3}">
+        <File Id="CurveSphere02.xml" KeyPath="yes" Source="$(var.ExamplesDir)\CurveSphere02.xml" />
+      </Component>
+      <Component Id="Fan01.xml" Guid="{929A996B-2C47-4E4B-AAC5-FD44B3ED7BCE}">
+        <File Id="Fan01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Fan01.xml" />
+      </Component>
+      <Component Id="Flower01.xml" Guid="{57CFB15D-09A0-4708-A84E-B0F5FCE4EC95}">
+        <File Id="Flower01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Flower01.xml" />
+      </Component>
+      <Component Id="Flower02.xml" Guid="{1360E462-4BBC-4EBF-8F12-38CBC25664D2}">
+        <File Id="Flower02.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Flower02.xml" />
+      </Component>
+      <Component Id="Flower03.xml" Guid="{9EACCA16-1DC1-4FC4-8B62-0B3C5245B387}">
+        <File Id="Flower03.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Flower03.xml" />
+      </Component>
+      <Component Id="Grid.xml" Guid="{9EBD8419-124A-4A97-913B-C3C87C78713F}">
+        <File Id="Grid.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Grid.xml" />
+      </Component>
+      <Component Id="Islands01.xml" Guid="{573D5261-0CA2-497B-9A1F-FB99ACEEF870}">
+        <File Id="Islands01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Islands01.xml" />
+      </Component>
+      <Component Id="LavaLamp01.xml" Guid="{5BAAF2D8-9BB5-4AB4-A79A-4D452085472C}">
+        <File Id="LavaLamp01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\LavaLamp01.xml" />
+      </Component>
+      <Component Id="LavaLamp02.xml" Guid="{7B4BD78C-3581-4FF4-B7C4-0216002E6807}">
+        <File Id="LavaLamp02.xml" KeyPath="yes" Source="$(var.ExamplesDir)\LavaLamp02.xml" />
+      </Component>
+      <Component Id="Lemonade01.xml" Guid="{3BF1A916-1013-421A-BAE4-08BA42A2D2F4}">
+        <File Id="Lemonade01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Lemonade01.xml" />
+      </Component>
+      <Component Id="LensEffect.xml" Guid="{2149E6C6-FDD4-4F80-BFF3-4D5DDEDD8AED}">
+        <File Id="LensEffect.xml" KeyPath="yes" Source="$(var.ExamplesDir)\LensEffect.xml" />
+      </Component>
+      <Component Id="Lissajous01.xml" Guid="{AC4596BE-32AD-46AA-861B-884CBDE18A76}">
+        <File Id="Lissajous01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Lissajous01.xml" />
+      </Component>
+      <Component Id="Lissajous02.xml" Guid="{9B3EC023-EB92-44AD-BA7A-A94E7EF9DEA8}">
+        <File Id="Lissajous02.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Lissajous02.xml" />
+      </Component>
+      <Component Id="Lissajous03.xml" Guid="{81791B50-B1FB-4092-ACB3-355D9625DEC3}">
+        <File Id="Lissajous03.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Lissajous03.xml" />
+      </Component>
+      <Component Id="LissajousLights.xml" Guid="{356489A0-6630-4949-83C3-CA5B1011BF00}">
+        <File Id="LissajousLights.xml" KeyPath="yes" Source="$(var.ExamplesDir)\LissajousLights.xml" />
+      </Component>
+      <Component Id="Logo.xml" Guid="{6E79CBA5-E833-4008-B040-8980DEDEB1CB}">
+        <File Id="Logo.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Logo.xml" />
+      </Component>
+      <Component Id="Loops01.xml" Guid="{A33D2EB0-C391-4486-980C-5150AE527886}">
+        <File Id="Loops01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Loops01.xml" />
+      </Component>
+      <Component Id="Metal.xml" Guid="{0B866EDA-A540-4D09-A6A7-EC4B303F58A9}">
+        <File Id="Metal.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Metal.xml" />
+      </Component>
+      <Component Id="Pulsate.xml" Guid="{328EA9F6-3350-450F-B9E1-AC409C2A1D4C}">
+        <File Id="Pulsate.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Pulsate.xml" />
+      </Component>
+      <Component Id="Ribbon01.xml" Guid="{2777E831-C59F-4D31-9CD9-FCB8DDE36F46}">
+        <File Id="Ribbon01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Ribbon01.xml" />
+      </Component>
+      <Component Id="Ring01.xml" Guid="{002165A4-083E-4A9C-B8AD-624F3809C288}">
+        <File Id="Ring01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Ring01.xml" />
+      </Component>
+      <Component Id="Ring02.xml" Guid="{460F4739-7F62-48EF-A66D-527BE7F46146}">
+        <File Id="Ring02.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Ring02.xml" />
+      </Component>
+      <Component Id="Ring03.xml" Guid="{C3456AE0-6E88-4008-A2D3-F3FBB1D35BDF}">
+        <File Id="Ring03.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Ring03.xml" />
+      </Component>
+      <Component Id="ScaryForest.xml" Guid="{1B02A53E-15D4-447C-A195-FB2A1B29189D}">
+        <File Id="ScaryForest.xml" KeyPath="yes" Source="$(var.ExamplesDir)\ScaryForest.xml" />
+      </Component>
+      <Component Id="ScarySlides.xml" Guid="{C2E146C6-B666-4D63-A32B-FA348518A886}">
+        <File Id="ScarySlides.xml" KeyPath="yes" Source="$(var.ExamplesDir)\ScarySlides.xml" />
+      </Component>
+      <Component Id="ShadowExample.xml" Guid="{905814ED-5610-4E40-9427-73C6F9923A68}">
+        <File Id="ShadowExample.xml" KeyPath="yes" Source="$(var.ExamplesDir)\ShadowExample.xml" />
+      </Component>
+      <Component Id="Spikes01.xml" Guid="{355E3674-1B8B-4E74-AA73-0D4DA52FE941}">
+        <File Id="Spikes01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Spikes01.xml" />
+      </Component>
+      <Component Id="Spiral01.xml" Guid="{EF5A94AB-CB72-4323-841E-A14342BE6887}">
+        <File Id="Spiral01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Spiral01.xml" />
+      </Component>
+      <Component Id="Spiral02.xml" Guid="{E47E5D56-DD18-4B06-955C-F9FDB0FE378F}">
+        <File Id="Spiral02.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Spiral02.xml" />
+      </Component>
+      <Component Id="Spiral03.xml" Guid="{7320B6B0-57C7-436E-BE9C-A1A3839F891D}">
+        <File Id="Spiral03.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Spiral03.xml" />
+      </Component>
+      <Component Id="Tartan.xml" Guid="{038932EB-8890-4DED-81BD-E036DAFF7453}">
+        <File Id="Tartan.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Tartan.xml" />
+      </Component>
+      <Component Id="WhirlpoolSphere.xml" Guid="{3D78F703-74EC-4F38-BFF2-8C92569F0744}">
+        <File Id="WhirlpoolSphere.xml" KeyPath="yes" Source="$(var.ExamplesDir)\WhirlpoolSphere.xml" />
+      </Component>
+      <Component Id="Wrap01.xml" Guid="{C7221EC7-513F-4072-88CB-D27395AE2BA3}">
+        <File Id="Wrap01.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Wrap01.xml" />
+      </Component>
+      <Component Id="Wrap02.xml" Guid="{639E2303-8310-4273-8B9E-B372626236C9}">
+        <File Id="Wrap02.xml" KeyPath="yes" Source="$(var.ExamplesDir)\Wrap02.xml" />
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="FunctyExamples">
+      <ComponentRef Id="BouncingBall.xml" />
+      <ComponentRef Id="BumpySlides.xml" />
+      <ComponentRef Id="CurveSphere01.xml" />
+      <ComponentRef Id="CurveSphere02.xml" />
+      <ComponentRef Id="Fan01.xml" />
+      <ComponentRef Id="Flower01.xml" />
+      <ComponentRef Id="Flower02.xml" />
+      <ComponentRef Id="Flower03.xml" />
+      <ComponentRef Id="Grid.xml" />
+      <ComponentRef Id="Islands01.xml" />
+      <ComponentRef Id="LavaLamp01.xml" />
+      <ComponentRef Id="LavaLamp02.xml" />
+      <ComponentRef Id="Lemonade01.xml" />
+      <ComponentRef Id="LensEffect.xml" />
+      <ComponentRef Id="Lissajous01.xml" />
+      <ComponentRef Id="Lissajous02.xml" />
+      <ComponentRef Id="Lissajous03.xml" />
+      <ComponentRef Id="LissajousLights.xml" />
+      <ComponentRef Id="Logo.xml" />
+      <ComponentRef Id="Loops01.xml" />
+      <ComponentRef Id="Metal.xml" />
+      <ComponentRef Id="Pulsate.xml" />
+      <ComponentRef Id="Ribbon01.xml" />
+      <ComponentRef Id="Ring01.xml" />
+      <ComponentRef Id="Ring02.xml" />
+      <ComponentRef Id="Ring03.xml" />
+      <ComponentRef Id="ScaryForest.xml" />
+      <ComponentRef Id="ScarySlides.xml" />
+      <ComponentRef Id="ShadowExample.xml" />
+      <ComponentRef Id="Spikes01.xml" />
+      <ComponentRef Id="Spiral01.xml" />
+      <ComponentRef Id="Spiral02.xml" />
+      <ComponentRef Id="Spiral03.xml" />
+      <ComponentRef Id="Tartan.xml" />
+      <ComponentRef Id="WhirlpoolSphere.xml" />
+      <ComponentRef Id="Wrap01.xml" />
+      <ComponentRef Id="Wrap02.xml" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

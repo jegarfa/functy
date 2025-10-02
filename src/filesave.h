@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////
+// Functy FileSave.h
+// Load/Save Functy function information
+//
+// David Llewellyn-Jones
+// http://www.flypig.co.uk
+//
+// December 2012
+///////////////////////////////////////////////////////////////////
+
+#ifndef FILESAVE_H
+#define FILESAVE_H
+
+///////////////////////////////////////////////////////////////////
+// Includes
+
+#include <stdlib.h>
+
+#include "functy.h"
+
+///////////////////////////////////////////////////////////////////
+// Defines
+
+#define DEFAULT_SETTINGS_FILE ".functy.xml"
+
+///////////////////////////////////////////////////////////////////
+// Structures and enumerations
+
+typedef struct _LocaleRestore LocaleRestore;
+
+///////////////////////////////////////////////////////////////////
+// Global variables
+
+///////////////////////////////////////////////////////////////////
+// Function prototypes
+
+// Load/save file routines
+
+bool LoadFile (char const * szFilename, bool boConfigure, FunctyPersist * psFunctyData);
+bool SaveFile (char const * szFilename, bool boConfigure, FunctyPersist * psFunctyData);
+
+// Locale related routines
+LocaleRestore * ClearLocale ();
+void RestoreLocale (LocaleRestore * psRestore);
+
+#endif /* FILESAVE_H */
+

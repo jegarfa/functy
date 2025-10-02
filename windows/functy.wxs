@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
+
+	<Product Name='Functy' Id='67A5E242-2F68-4044-A1CB-51F55BCA5856'
+		UpgradeCode='000BF5D5-D50A-47B3-9140-2930475CB672'
+		Language='1033' Codepage='1252' Version='$(env.productversion)' Manufacturer='David Llewellyn-Jones'>
+
+		<Package Id='*' Keywords='Installer'
+			Description="Functy Installer"
+			Comments='Functy is released under an MIT-style licence. See http://functy.sourceforge.net for more info.'
+			Manufacturer='David Llewellyn-Jones'
+			InstallerVersion='100' Languages='1033' Compressed='yes' SummaryCodepage='1252' InstallScope="perMachine" />
+		<Media Id='1' Cabinet='Functy.cab' EmbedCab='yes' DiskPrompt="CD-ROM #1" />
+		<Property Id='DiskPrompt' Value="Functy Installation [1]" />
+
+		<Directory Id='TARGETDIR' Name='SourceDir'>
+			<Directory Id='ProgramFilesFolder' Name='PFiles'>
+				<Directory Id='INSTALLDIR' Name='Functy'>
+					<Component Id='MainExecutable' Guid='9F0B2D18-33F9-4316-931D-4DB544EDA3AA'>
+						<File Id='FunctyEXE' Name='functy.exe' DiskId='1'
+							Source='functy.exe' Vital='yes'>
+						</File>
+						<RemoveFile Id='Settings' On='uninstall' Name='.functy.xml' />
+					</Component>
+
+					<Directory Id='FunctyExamplesFolder' Name='examples'>
+						<Component Id='StartMenuExampleShortcuts' Guid='3FF0D33E-DE33-4DFB-AFBF-8CC03DCE7E97'>
+							<Shortcut Id="StartMenuExamples" Directory="ProgramMenuDir" Name="Examples" 
+							WorkingDirectory='INSTALLDIR' />
+							<Condition>SHORTCUT_STARTMENU</Condition>
+							<CreateFolder/>
+							<RemoveFolder Id="ProgramMenuDirExamples" Directory="ProgramMenuDir" On="uninstall"/>
+							<RegistryValue Root="HKCU" Key="Software\Functy" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+						</Component>
+					</Directory>
+
+					<Component Id='StartMenuShortcuts' Guid='3239B14E-1A37-48C0-9338-42215056F511'>
+						<Shortcut Id="StartMenuFuncty" Directory="ProgramMenuDir" Name="Functy" 
+							WorkingDirectory='INSTALLDIR'
+							Target="[!FunctyEXE]"
+							Icon="functy.ico" IconIndex="0" />
+						<Condition>SHORTCUT_STARTMENU</Condition>
+						<CreateFolder/>
+						<RemoveFolder Id="ProgramMenuDirFuncty" Directory="ProgramMenuDir" On="uninstall"/>
+						<RegistryValue Root="HKCU" Key="Software\Functy" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+					</Component>
+
+					<Component Id='DesktopShortcuts' Guid='90716911-CC37-4830-BA88-368927B97F98'>
+						<Shortcut Id="DesktopFuncty" Directory="DesktopFolder" Name="Functy" 
+							WorkingDirectory='INSTALLDIR'
+							Target="[!FunctyEXE]"
+							Icon="functy.ico" IconIndex="0" />
+						<Condition>SHORTCUT_DESKTOP</Condition>
+						<CreateFolder/>
+						<RegistryValue Root="HKCU" Key="Software\Functy" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+					</Component>
+
+					<Directory Id='FunctyAssetsFolder' Name='assets'>
+					</Directory>
+					
+					<Directory Id='GtkLibFolder' Name='.'>
+					</Directory>
+
+					<Component Id='InfoFiles' Guid='EAEB814F-BA22-4194-BC27-06EEAB05188D'>
+						<File Id='ReadMe' Name='README' DiskId='1' Source='README' />
+						<File Id='News' Name='NEWS' DiskId='1' Source='NEWS' />
+						<File Id='Install' Name='INSTALL' DiskId='1' Source='INSTALL' />
+						<File Id='Authors' Name='AUTHORS' DiskId='1' Source='AUTHORS' />
+						<File Id='Copying_Functy' Name='COPYING' DiskId='1' Source='COPYING' />
+					</Component>
+
+				</Directory>
+			</Directory>
+
+			<Directory Id="ProgramMenuFolder" Name="Programs">
+				<Directory Id="ProgramMenuDir" Name='Functy' />
+			</Directory>
+
+			<Directory Id="DesktopFolder" Name="Desktop" />
+		</Directory>
+
+		<Feature Id='Complete' Title="Functy" Description="The Functy graph rendering package" Display="expand" Level='1' ConfigurableDirectory='INSTALLDIR'>
+			<Feature Id='MainProgram' Title="Program" Description="The main executable" Level='1'>
+				<ComponentRef Id='MainExecutable' />
+				<ComponentGroupRef Id='FunctyAssets' />
+				<ComponentGroupRef Id='GtkLibs' />
+			</Feature>
+
+			<Feature Id='StartMenu' Title="Start Menu Shortcuts" Description="Shortcuts to the program added to your Start menu" Level='1'>
+				<ComponentRef Id='StartMenuShortcuts' />
+				<ComponentRef Id='StartMenuExampleShortcuts' />
+			</Feature>
+
+			<Feature Id='Desktop' Title="Desktop Shortcut" Description="Shortcuts to the program added to your Desktop" Level='1'>
+				<ComponentRef Id='DesktopShortcuts' />
+			</Feature>
+			
+			<Feature Id='Info' Title='Information' Description='ReadMe, licence and basic documentation.' Level='1'>
+				<ComponentRef Id='InfoFiles' />
+			</Feature>
+			<Feature Id='Examples' Title='Examples' Description='Example function files that can be loaded into Functy.' Level='1'>
+				<ComponentGroupRef Id='FunctyExamples' />
+			</Feature>
+		</Feature>
+
+		<Property Id="WIXUI_INSTALLDIR">INSTALLDIR</Property>
+		<Property Id="SHORTCUT_DESKTOP">1</Property>
+		<Property Id="SHORTCUT_STARTMENU">1</Property>
+		<UIRef Id="WixUI_Functy" />
+		<UIRef Id="WixUI_ErrorProgressText" />
+
+		<Icon Id="functy.ico" SourceFile="functy.ico" />
+		<Property Id="ARPPRODUCTICON" Value="functy.ico" />
+	</Product>
+</Wix>
+
+
+
+
+
+

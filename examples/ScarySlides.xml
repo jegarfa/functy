@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-5.000000" y="-5.000000" z="-20.000000"/>
+		</min>
+		<width>
+			<coord x="10.000000" y="10.000000" z="40.000000"/>
+		</width>
+	</range>
+	<function>
+		<equation>6+(5*sin(t)*cos(x))+cos(y*5)</equation>
+		<red>(2+cos(y*2))/2</red>
+		<green>0</green>
+		<blue>0.550</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+	</function>
+</functy>
+

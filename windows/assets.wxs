@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <DirectoryRef Id="FunctyAssetsFolder">
+      <Component Id="functy.ui" Guid="{AAE01815-6596-47A6-A4F9-3A6DF873371F}">
+        <File Id="functy.ui" KeyPath="yes" Source="$(var.AssetsDir)\functy.ui" />
+      </Component>
+      
+      <Component Id="Makefile.in" Guid="{BBEE6726-9A5A-438B-B3D9-25A14F8445A4}">
+        <File Id="Makefile.in" KeyPath="yes" Source="$(var.AssetsDir)\Makefile.in" />
+      </Component>
+      <Directory Id="icons" Name="icons">
+        <Component Id="export_anim.png" Guid="{55D4D3CE-75B5-4A4E-9057-B9523B8D7E05}">
+          <File Id="export_anim.png" KeyPath="yes" Source="$(var.AssetsDir)\icons\export-anim.png" />
+        </Component>
+        <Component Id="export_model.png" Guid="{0DEB892F-7682-4990-94D6-AE18C10B9ED8}">
+          <File Id="export_model.png" KeyPath="yes" Source="$(var.AssetsDir)\icons\export-model.png" />
+        </Component>
+        <Component Id="functy.png" Guid="{94A2B4E5-C0B4-49D1-A085-83474952D1F2}">
+          <File Id="functy.png" KeyPath="yes" Source="$(var.AssetsDir)\icons\functy.png" />
+        </Component>
+        
+        <Component Id="Makefile.in_1" Guid="{26848877-DE42-48B5-A722-95D66D2FAA04}">
+          <File Id="Makefile.in_1" KeyPath="yes" Source="$(var.AssetsDir)\icons\Makefile.in" />
+        </Component>
+        <Component Id="new_cartesian.png" Guid="{406B352C-2CC3-4DF4-99A9-8BA4666F8DC6}">
+          <File Id="new_cartesian.png" KeyPath="yes" Source="$(var.AssetsDir)\icons\new-cartesian.png" />
+        </Component>
+        <Component Id="new_curve.png" Guid="{57B58311-D2A3-455A-8363-2D1A9D7C0C11}">
+          <File Id="new_curve.png" KeyPath="yes" Source="$(var.AssetsDir)\icons\new-curve.png" />
+        </Component>
+        <Component Id="new_spherical.png" Guid="{7C46117A-B8F3-497A-88A3-7EA8C85FD99A}">
+          <File Id="new_spherical.png" KeyPath="yes" Source="$(var.AssetsDir)\icons\new-spherical.png" />
+        </Component>
+        <Component Id="panel_bottom.png" Guid="{1A6905A0-B1AE-4471-BAE7-BDB8C44072F7}">
+          <File Id="panel_bottom.png" KeyPath="yes" Source="$(var.AssetsDir)\icons\panel-bottom.png" />
+        </Component>
+        <Component Id="panel_left.png" Guid="{FECA3E4A-3700-4ED9-AEEC-69824FC5C0CC}">
+          <File Id="panel_left.png" KeyPath="yes" Source="$(var.AssetsDir)\icons\panel-left.png" />
+        </Component>
+      </Directory>
+      <Directory Id="shaders" Name="shaders">
+        <Component Id="cartesian_shadow.fs" Guid="{12B7B669-0EE6-4130-B993-CE656A903E34}">
+          <File Id="cartesian_shadow.fs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\cartesian-shadow.fs" />
+        </Component>
+        <Component Id="cartesian_shadow.vs" Guid="{6FC5FC30-E074-4DD2-8878-1BAD16DA30E0}">
+          <File Id="cartesian_shadow.vs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\cartesian-shadow.vs" />
+        </Component>
+        <Component Id="cartesian.fs" Guid="{D35158BF-9B3E-4B3F-8649-BA55D0ABF57E}">
+          <File Id="cartesian.fs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\cartesian.fs" />
+        </Component>
+        <Component Id="cartesian.vs" Guid="{AC74CDCC-A51B-4271-B964-6A8B0C6EF80C}">
+          <File Id="cartesian.vs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\cartesian.vs" />
+        </Component>
+        <Component Id="curve_shadow.fs" Guid="{CAE82EC6-550D-44DD-9B5B-9EA25B7D0C5C}">
+          <File Id="curve_shadow.fs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\curve-shadow.fs" />
+        </Component>
+        <Component Id="curve_shadow.vs" Guid="{74537A04-7C89-4B6D-9967-E686DAF7F167}">
+          <File Id="curve_shadow.vs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\curve-shadow.vs" />
+        </Component>
+        <Component Id="curve.fs" Guid="{00B4E78A-1FD5-40AE-8BD1-30C4CDD25A11}">
+          <File Id="curve.fs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\curve.fs" />
+        </Component>
+        <Component Id="curve.vs" Guid="{ABE07A6F-342A-4DB7-8D65-D9B3296FF92A}">
+          <File Id="curve.vs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\curve.vs" />
+        </Component>
+        <Component Id="depth.fs" Guid="{001CEDD5-8FCD-4825-BADA-F37DA26255AA}">
+          <File Id="depth.fs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\depth.fs" />
+        </Component>
+        <Component Id="depth.vs" Guid="{C0309FE6-BE2A-49E3-AB12-6BBE4BE1FD3F}">
+          <File Id="depth.vs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\depth.vs" />
+        </Component>
+        
+        <Component Id="Makefile.in_2" Guid="{6202AACB-D64B-48A0-98C0-5E8DDCB19C8A}">
+          <File Id="Makefile.in_2" KeyPath="yes" Source="$(var.AssetsDir)\shaders\Makefile.in" />
+        </Component>
+        <Component Id="screen.fs" Guid="{B15D9812-1424-4948-9F95-EC1CFE1719B0}">
+          <File Id="screen.fs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\screen.fs" />
+        </Component>
+        <Component Id="screen.vs" Guid="{23254974-BEF3-446B-8855-39C0712D7BCE}">
+          <File Id="screen.vs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\screen.vs" />
+        </Component>
+        <Component Id="spherical_shadow.fs" Guid="{003A0126-FB98-436C-8CCE-A836C0FD3B52}">
+          <File Id="spherical_shadow.fs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\spherical-shadow.fs" />
+        </Component>
+        <Component Id="spherical_shadow.vs" Guid="{3FA47700-A9D9-49AA-B557-DEF48782DA70}">
+          <File Id="spherical_shadow.vs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\spherical-shadow.vs" />
+        </Component>
+        <Component Id="spherical.fs" Guid="{82D4C231-AA31-4D45-8E7B-229314E2C2ED}">
+          <File Id="spherical.fs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\spherical.fs" />
+        </Component>
+        <Component Id="spherical.vs" Guid="{2E34597E-712D-48A7-A690-7C3F5A8BD8A4}">
+          <File Id="spherical.vs" KeyPath="yes" Source="$(var.AssetsDir)\shaders\spherical.vs" />
+        </Component>
+      </Directory>
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="FunctyAssets">
+      <ComponentRef Id="COPYING" />
+      <ComponentRef Id="functy.ui" />
+      
+      <ComponentRef Id="Makefile.in" />
+      <ComponentRef Id="export_anim.png" />
+      <ComponentRef Id="export_model.png" />
+      <ComponentRef Id="functy.png" />
+      
+      <ComponentRef Id="Makefile.in_1" />
+      <ComponentRef Id="new_cartesian.png" />
+      <ComponentRef Id="new_curve.png" />
+      <ComponentRef Id="new_spherical.png" />
+      <ComponentRef Id="panel_bottom.png" />
+      <ComponentRef Id="panel_left.png" />
+      <ComponentRef Id="cartesian_shadow.fs" />
+      <ComponentRef Id="cartesian_shadow.vs" />
+      <ComponentRef Id="cartesian.fs" />
+      <ComponentRef Id="cartesian.vs" />
+      <ComponentRef Id="curve_shadow.fs" />
+      <ComponentRef Id="curve_shadow.vs" />
+      <ComponentRef Id="curve.fs" />
+      <ComponentRef Id="curve.vs" />
+      <ComponentRef Id="depth.fs" />
+      <ComponentRef Id="depth.vs" />
+      
+      <ComponentRef Id="Makefile.in_2" />
+      <ComponentRef Id="screen.fs" />
+      <ComponentRef Id="screen.vs" />
+      <ComponentRef Id="spherical_shadow.fs" />
+      <ComponentRef Id="spherical_shadow.vs" />
+      <ComponentRef Id="spherical.fs" />
+      <ComponentRef Id="spherical.vs" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-50.000000" y="-50.000000" z="-50.000000"/>
+		</min>
+		<width>
+			<coord x="100.000000" y="100.000000" z="100.000000"/>
+		</width>
+	</range>
+	<function type="curve">
+		<equation>0.7*((4*3)/((((4*cos(p+cos(4*((a)**(1/2))*(2*3.1415926535897932))))**2)+((3*sin(p))**2))**(1/2)))*((4+cos(80*a*(2*3.1415926535897932)))/5)*(sin(a*(3.1415926535897932))**(1/8))</equation>
+		<red>cos(3*a*(2*3.1415926535897932))*0+1</red>
+		<green>(1-cos(2*a*(0.5*3.1415926535897932)))/2</green>
+		<blue>(1-sin(0.75*a*(2*3.1415926535897932)))/2</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.000500"/>
+		<accuracy-radius double="0.033333"/>
+		<equation-x>((40*a)-0)*cos((0.3*3.1415926535897932)*cos(4*((a+1.001+sin(t/10))**(1/2))*(2*3.1415926535897932)))*sin(25*a*(2*3.1415926535897932))</equation-x>
+		<equation-y>((40*a)-0)*cos((0.3*3.1415926535897932)*cos(4*((a+1.001+sin(t/10))**(1/2))*(2*3.1415926535897932)))*cos(25*a*(2*3.1415926535897932))</equation-y>
+		<equation-z>((40*a)-0)*sin((0.3*3.1415926535897932)*cos(4*((a+1.001+sin(t/10))**(1/2))*(2*3.1415926535897932)))</equation-z>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>0.000</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

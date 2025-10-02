@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="1"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-6.298561" y="-6.298561" z="-6.298561"/>
+		</min>
+		<width>
+			<coord x="12.597119" y="12.597119" z="12.597119"/>
+		</width>
+	</range>
+	<controlvar>
+		<varname>g</varname>
+		<varvalue>0.549</varvalue>
+	</controlvar>
+	<controlvar>
+		<varname>d</varname>
+		<varvalue>0.527</varvalue>
+	</controlvar>
+	<controlvar>
+		<varname>f</varname>
+		<varvalue>0.341</varvalue>
+	</controlvar>
+	<controlvar>
+		<varname>h</varname>
+		<varvalue>0.692</varvalue>
+	</controlvar>
+	<function type="curve">
+		<name>Curve 0</name>
+		<equation>h*(1-f*a)+0.2*sin(a*20*22/7)+0.1*cos(p*6)</equation>
+		<red>(1+cos(8*a*22/7))/2</red>
+		<green>(1+sin(8*a*22/7))/2</green>
+		<blue>(1+cos(8*(a*22/7)+(22/7)))/2</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.005000"/>
+		<material-thickness double="0.100000"/>
+		<material-fill bool="0"/>
+		<accuracy-radius double="0.020000"/>
+		<equation-x>(5-(4*g*a))*sin(1.6+a*8*22/7)</equation-x>
+		<equation-y>(5-(4*g*a))*cos(1.6+a*8*22/7)</equation-y>
+		<equation-z>(2-(a*8*d))*(3+sin(a))</equation-z>
+		<centre-x>0.0</centre-x>
+		<centre-y>0.0</centre-y>
+		<centre-z>0.0</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

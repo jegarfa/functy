@@ -1,0 +1,54 @@
+name: functy
+version: 0.38
+summary: 3D graph drawing with vivid and immediate results
+description:
+  Functy is a 3D graph drawing package. The emphasis for the application is to 
+  allow Cartesian and spherical functions to be plotted and altered quickly and 
+  easily.
+confinement: strict
+
+apps:
+  functy:
+    command: desktop-launch functy --datadir="${SNAP}/share/functy"
+    plugs:
+      - x11
+      - unity7
+      - opengl
+      - pulseaudio
+      - home
+
+parts:
+  libsymbolic:
+    plugin: autotools
+    source: https://gitlab.com/flypig/libsymbolic.git
+  functy:
+    plugin: autotools
+    source: https://gitlab.com/flypig/functy.git
+    build-packages:
+      - g++
+      - libgtkglext1-dev
+      - glee-dev
+      - libzip-dev
+      - libpng12-dev
+      - libpulse-dev
+      - libfftw3-dev
+      - libncursesw5-dev
+      - libopenexr-dev
+      - libtbb-dev
+      - freeglut3-dev
+      - libboost-dev
+      - libopenvdb-dev
+    stage-packages:
+      - libgtkglext1
+      - libglee0d1
+      - libzip4
+      - libpng12-0
+      - libpulse-mainloop-glib0
+      - libfftw3-3
+      - libncursesw5
+      - libopenexr22
+      - libtbb2
+      - freeglut3
+      - libopenvdb3.1
+    after: [desktop-gtk2, libsymbolic]
+

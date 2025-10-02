@@ -1,0 +1,15 @@
+Source: functy
+Section: math
+Priority: extra
+Maintainer: David Llewellyn-Jones <david@flypig.co.uk>
+Build-Depends: debhelper (>= 7), autotools-dev, libgtkglext1-dev, freeglut3-dev, libgtk2.0-dev, libpango1.0-dev, libglib2.0-dev, libcairo2-dev, zlib1g-dev, libzip-dev, libpng-dev, libtbb-dev, glee-dev, libopenvdb-dev, libopenexr-dev, libsymbolic-dev, libboost-dev, libpulse-dev, libpulse-mainloop-glib0, fftw3-dev, libncursesw5-dev
+Standards-Version: 3.8.0
+
+Package: functy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: 3D graph drawing package
+ Functy is a 3D graph drawing package. The emphasis for the 
+ application is to allow Cartesian and spherical functions to be 
+ plotted and altered quickly and easily. This immediacy and the vivid 
+ results are intended to promote fun exploration of 3D functions.

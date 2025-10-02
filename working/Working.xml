@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-15.432098" y="-15.432098" z="-15.432098"/>
+		</min>
+		<width>
+			<coord x="30.864198" y="30.864198" z="30.864198"/>
+		</width>
+	</range>
+	<function type="spherical">
+		<name>Spherical 0</name>
+		<equation>2*(2+(sin(cos(t+(3.14159265*sin(t)+a))+(p*((3+cos(t-1.5))/4))*10)**2)+(((6+cos(t))/7)*((2+sin(8*a))/3)**4))</equation>
+		<red>r/8</red>
+		<green>(3+sin((a)*8))/5</green>
+		<blue>(3+cos(a*8))/5</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.005000"/>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>2+(3*sin((5*t)-0.0)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<name>Spherical 1</name>
+		<equation>5</equation>
+		<red>0.500</red>
+		<green>0.606</green>
+		<blue>0.994</blue>
+		<alpha>0.900</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>10</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>0.000</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="cartesian">
+		<name>Cartesian 2</name>
+		<equation>sin(x)</equation>
+		<red>1.000</red>
+		<green>0.550</green>
+		<blue>0.550</blue>
+		<alpha>0.900</alpha>
+		<accuracy double="0.020000"/>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="curve">
+		<name>Curve 3</name>
+		<equation>(4+sin(a*150))/4</equation>
+		<red>1.000</red>
+		<green>0.550</green>
+		<blue>0.932</blue>
+		<alpha>1.000</alpha>
+		<accuracy double="0.010000"/>
+		<accuracy-radius double="0.020000"/>
+		<equation-x>(20*a) - 10</equation-x>
+		<equation-y>7*cos(a*3)</equation-y>
+		<equation-z>10+5*sin(a*7)</equation-z>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>0.000</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

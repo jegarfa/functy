@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-14.360527" y="-14.896742" z="-63.443382"/>
+		</min>
+		<width>
+			<coord x="31.721691" y="31.721691" z="126.886765"/>
+		</width>
+	</range>
+	<function>
+		<equation>0.6*(ln((sin(t)*cos(x))+1.2)*(ln(cos(y)+1.1)))</equation>
+		<red>1</red>
+		<green>0.427</green>
+		<blue>0.728</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.010000"/>
+	</function>
+</functy>
+

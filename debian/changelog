@@ -1,0 +1,97 @@
+functy (0.38.0-1) unstable; urgency=low
+  * Allow tabbing between functioon entry fields.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Mon, 26 Sep 2016 23:39:30 +0100
+
+functy (0.37.0-1) unstable; urgency=low
+  * Audio frequency animation extended to software as well as GPU-rendered functions.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Thu, 6 Aug 2015 22:03:45 +0100
+
+functy (0.36.0-1) unstable; urgency=low
+  * Initial support for function animation using real-time audio frequency analysis
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Wed, 5 Aug 2015 23:19:30 +0100
+
+functy (0.35.0-1) unstable; urgency=low
+  * Added config scripts
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Sun, 10 May 2015 03:06:10 +0100
+
+functy (0.34.0-1) unstable; urgency=low
+  * Export models in OpenVDB format.
+  * Fixed various bugs, including SVX export centre and control variable errors.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Sat, 9 May 2015 23:57:35 +0100
+
+functy (0.33.0-1) unstable; urgency=low
+  * Export models in Simple Voxel (SVX) format for upload to Shapeways.
+  * Export animation as PNG frames.
+  * Progress dialogue added for long export operations.
+  * About dialogue added, including licence info.
+  * Menu item added to access help documentation.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Sat, 1 Nov 2014 20:14:00 +0100
+
+functy (0.32.0-1) unstable; urgency=low
+
+  * Models can now be exported in STL format as well as PLY.
+  * Animation from can also be exported as both STL and PLY.
+  * Fixed a bug that caused binary PLY files to export corrupted on Windows.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Sun, 28 Sep 2014 13:31:00 +0100
+
+functy (0.31.0-1) unstable; urgency=low
+
+  * Shadows can now be turned on and off, while still using shader rendering.
+  * Focus blur can also be tuurned on and off, while still using shaders.
+  * Controls added to set the focus blur depth of field.
+  * Buttons added to toggle the left and botton UI panels on and off.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Sun, 28 Sep 2014 13:31:00 +0100
+
+functy (0.30.0-1) unstable; urgency=low
+
+  * Control variables added to allow extra variables with assigned values to be used.
+  * New single-window workbench-style UI.
+  * Focus blur and shadows to improve appearance of depth.
+  * Export multiple PLY files for external animation (e.g. using Blender).
+  * Improved Windows installer process with GTK libraries included in the standard MSI package.
+  * UI switched from libglade to GtkBuilder.
+  * Functions now entered using multiline text boxes for better editing control.
+  * New installer and UI graphics.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Wed, 20 Aug 2014 20:00:00 +0100
+
+functy (0.25.0-1) unstable; urgency=low
+
+  * Added export to Stanford Triangle Format (PLY) file for use with modelling applications.
+  * Option to hide the button bar.
+  * Improved shader compatibility for functions (or their derivatives) that have exponents (pow).
+  * Improved shader colour handling.
+  * Allow the animation to be paused with the space bar.
+  * Improved performance when rendering the axes.
+  * Reversed orientation of exported spherical functions for better consistency.
+  * New example files.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Sun, 1 July 2012 09:36:00 +0100
+
+functy (0.24.0-1) unstable; urgency=low
+
+  * Added full support for parametric curves with cylindrical cross-section, including both CPU and GPU rendering.
+  * Improved Windows installation package.
+  * New example files.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Tue, 29 May 2012 11:06:00 +0100
+
+functy (0.23.0-1) unstable; urgency=low
+
+  * Added initial (CPU-only) support for parametric curves with cylindrical cross-section.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Sun, 27 May 2012 20:45:00 +0100
+
+functy (0.22.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- David Llewellyn-Jones <david@flypig.co.uk>  Sat, 27 Jun 2009 20:53:57 +0100

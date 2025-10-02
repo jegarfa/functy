@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="1"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-4.758254" y="-4.758254" z="-4.758254"/>
+		</min>
+		<width>
+			<coord x="9.516507" y="9.516507" z="9.516507"/>
+		</width>
+	</range>
+	<function type="spherical">
+		<equation>0.8</equation>
+		<red>1</red>
+		<green>0.550</green>
+		<blue>0.550</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>abs (((t*3.5) MOD 16)-8)-4</centre-x>
+		<centre-y>abs (((t*4.5) MOD 16)-8)-4</centre-y>
+		<centre-z>4.4-((((t*2) MOD 4)-2)**2)</centre-z>
+	</function>
+	<function type="cartesian">
+		<equation>0.1</equation>
+		<red>0.3</red>
+		<green>0.3</green>
+		<blue>((((abs (((t*3.5) MOD 16)-8)-4)-x)**2)+(((abs (((t*4.5) MOD 16)-8)-4)-y)**2)) &gt; ((((((t*2) MOD 4)-2)**2)+2)/10)</blue>
+		<alpha>0.8</alpha>
+		<accuracy double="0.010000"/>
+	</function>
+</functy>
+

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-15.860812" y="-19.524615" z="-68.518853"/>
+		</min>
+		<width>
+			<coord x="34.259426" y="34.259426" z="137.037706"/>
+		</width>
+	</range>
+	<function>
+		<equation>(10*cos((((x+0)**2)+((y+0)**2))**(1/2))/(((((((x+0)**2)+((y+0)**2))**(1/2))**2)/5)+2))+(15*cos((((x+5)**2)+((y+3)**2))**(1/2))/(((((((x+1)**2)+((y+3)**2))**(1/2))**2)/6)+3))+(18*cos((((x-8)**2)+((y+1)**2))**(1/2))/(((((((x-8)**2)+((y-3)**2))**(1/2))**2)/2)+3))</equation>
+		<red>0.050+(z/10)</red>
+		<green>0.337+(z/10)</green>
+		<blue>0.000+(z/10)</blue>
+		<alpha>1.000</alpha>
+		<accuracy double="0.010000"/>
+	</function>
+	<function>
+		<equation>0.5+(0.05*sin(((t/3)+y+(cos(x)/2.7))/0.2))</equation>
+		<red>0.5+(0.1*sin(((t/4)+x+(cos(y)/1.7))/0.3))</red>
+		<green>0.681</green>
+		<blue>0.9+(0.1*sin(((t/4)+x+(cos(y)/1.7))/0.3))</blue>
+		<alpha>0.400</alpha>
+		<accuracy double="0.010000"/>
+	</function>
+	<function>
+		<equation>22+((sin((x/2))*cos((y/3))))</equation>
+		<red>0.8</red>
+		<green>0.8</green>
+		<blue>0.8</blue>
+		<alpha>(((sin((y/10)+(t/20)))+(cos((x/10)+(t/12)))+0.5)*((sin((y/6)+(t/28)))+(cos((x/4)+(t/44)))+1))*0.4</alpha>
+		<accuracy double="0.020000"/>
+	</function>
+</functy>
+

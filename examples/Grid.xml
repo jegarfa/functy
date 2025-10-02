@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="66.926720" y="19.187932" z="-29.386562"/>
+		</min>
+		<width>
+			<coord x="14.693281" y="14.693281" z="58.773123"/>
+		</width>
+	</range>
+	<function>
+		<equation>5*(1-((x MOD 4)&gt;1)*((y MOD 4)&gt;1))</equation>
+		<red>(y MOD 2)&gt;1</red>
+		<green>(x MOD 2)&gt;1</green>
+		<blue>(z&gt;4)</blue>
+		<alpha>(z&gt;4)</alpha>
+		<accuracy double="0.020000"/>
+	</function>
+</functy>
+

@@ -1,0 +1,2 @@
+?package(functy):needs="X11" section="Applications/Education"\
+  title="Functy" command="/usr/bin/functy"

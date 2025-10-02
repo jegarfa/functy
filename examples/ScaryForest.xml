@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-15.661471" y="-0.147014" z="-34.276485"/>
+		</min>
+		<width>
+			<coord x="17.138244" y="17.138244" z="68.552970"/>
+		</width>
+	</range>
+	<function>
+		<equation>(3*sin(t)*exp(asin(sin(x))*asin(sin(y))))-10</equation>
+		<red>sin(y)</red>
+		<green>z/5</green>
+		<blue>0.550</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+	</function>
+	<function>
+		<equation>(3*cos(t)*exp(asin(cos(x))*asin(cos(y))))-10</equation>
+		<red>sin(y)</red>
+		<green>z/5</green>
+		<blue>0.550</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+	</function>
+	<function>
+		<equation>(0-10)-(3*cos(t)*exp(asin(sin(x))*asin(cos(y))))</equation>
+		<red>sin(y)</red>
+		<green>z/5</green>
+		<blue>0.550</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+	</function>
+	<function>
+		<equation>(0-10)-(3*sin(t)*exp(asin(cos(x))*asin(sin(y))))</equation>
+		<red>sin(y)</red>
+		<green>z/5</green>
+		<blue>0.550</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+	</function>
+</functy>
+

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="1"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-9.995023" y="-9.995023" z="-39.980093"/>
+		</min>
+		<width>
+			<coord x="19.990046" y="19.990046" z="79.960185"/>
+		</width>
+	</range>
+	<function type="cartesian">
+		<equation>0.1+((((x**2)+(y**2))**(1/2))&lt;8) * ((3*((((1+cos(3.14159265*(((x**2)+(y**2))**(1/2))/8))*(1+sin(t)))))))</equation>
+		<red>(((((((x**2)+(y**2))**(1/2)) &lt; 8) * ((((x**2)+(y**2))**(1/2)) &gt; (2*(1+sin(t)))) * (((((x/(((x**2)+(y**2))**(1/2))))*(  8-((8*((((x**2)+(y**2))**(1/2))-8))/((2*(1+sin(t)))-8))))*40) MOD 50) &lt; 3))+(((((x**2)+(y**2))**(1/2)) &gt; 8) * ((x * 40) MOD 50) &lt; 3))</red>
+		<green>(((((((x**2)+(y**2))**(1/2)) &lt; 8) * ((((x**2)+(y**2))**(1/2)) &gt; (2*(1+sin(t)))) * (((((y/(((x**2)+(y**2))**(1/2))))*(  8-((8*((((x**2)+(y**2))**(1/2))-8))/((2*(1+sin(t)))-8))))*40) MOD 50) &lt; 3))+(((((x**2)+(y**2))**(1/2)) &gt; 8) * ((y * 40) MOD 50) &lt; 3))</green>
+		<blue>1</blue>
+		<alpha>((x**2)+(y**2)) &lt; 1280</alpha>
+		<accuracy double="0.002000"/>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

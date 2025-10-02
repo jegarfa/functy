@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-19.980097" y="-19.980097" z="-19.980097"/>
+		</min>
+		<width>
+			<coord x="39.960194" y="39.960194" z="39.960194"/>
+		</width>
+	</range>
+	<function type="cartesian">
+		<equation>sin(x*3)/5</equation>
+		<red>1.000</red>
+		<green>0</green>
+		<blue>0.550</blue>
+		<alpha>1</alpha>
+		<accuracy double="1.000000"/>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

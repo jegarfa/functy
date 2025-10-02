@@ -1,0 +1,2755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <DirectoryRef Id="GtkLibFolder">
+      <Component Id="freeglut.dll" Guid="{C37A0261-7586-4B31-BA8B-B13427D54DF3}">
+        <File Id="freeglut.dll" KeyPath="yes" Source="$(var.GtkLibDir)\freeglut.dll" />
+      </Component>
+      <Component Id="freetype6.dll" Guid="{D9A09563-3900-47D3-BC4F-0DE0823E46F6}">
+        <File Id="freetype6.dll" KeyPath="yes" Source="$(var.GtkLibDir)\freetype6.dll" />
+      </Component>
+      <Component Id="gdk_pixbuf_query_loaders.exe" Guid="{5EB737C2-EABC-4018-BF08-7154E0147C81}">
+        <File Id="gdk_pixbuf_query_loaders.exe" KeyPath="yes" Source="$(var.GtkLibDir)\gdk-pixbuf-query-loaders.exe" />
+      </Component>
+      <Component Id="gspawn_win32_helper_console.exe" Guid="{789ACADA-C15F-42C1-BB1B-57CE49A98335}">
+        <File Id="gspawn_win32_helper_console.exe" KeyPath="yes" Source="$(var.GtkLibDir)\gspawn-win32-helper-console.exe" />
+      </Component>
+      <Component Id="gspawn_win32_helper.exe" Guid="{22D4E323-B5E2-4324-B4C0-44C1A7EE2F9B}">
+        <File Id="gspawn_win32_helper.exe" KeyPath="yes" Source="$(var.GtkLibDir)\gspawn-win32-helper.exe" />
+      </Component>
+      <Component Id="gtk_query_immodules_2.0.exe" Guid="{AC1004AA-F8C5-4073-BAC6-E6DB1AC7A7B4}">
+        <File Id="gtk_query_immodules_2.0.exe" KeyPath="yes" Source="$(var.GtkLibDir)\gtk-query-immodules-2.0.exe" />
+      </Component>
+      <Component Id="intl.dll" Guid="{FF55F1D0-DC9B-4B6F-9BB6-1616202B3665}">
+        <File Id="intl.dll" KeyPath="yes" Source="$(var.GtkLibDir)\intl.dll" />
+      </Component>
+      <Component Id="libatk_1.0_0.dll" Guid="{E61536FF-3D95-4285-B4C2-93F61F6E4F4D}">
+        <File Id="libatk_1.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libatk-1.0-0.dll" />
+      </Component>
+      <Component Id="libcairo_2.dll" Guid="{AE760BD8-DCB5-43C6-98BD-9442F0A03370}">
+        <File Id="libcairo_2.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libcairo-2.dll" />
+      </Component>
+      <Component Id="libcairo_gobject_2.dll" Guid="{70376C75-A98B-4F31-ABDA-BD54AD1F76D9}">
+        <File Id="libcairo_gobject_2.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libcairo-gobject-2.dll" />
+      </Component>
+      <Component Id="libcairo_script_interpreter_2.dll" Guid="{D9EA6CEC-2140-4C7F-B112-267956D54035}">
+        <File Id="libcairo_script_interpreter_2.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libcairo-script-interpreter-2.dll" />
+      </Component>
+      <Component Id="libexpat_1.dll" Guid="{8EC71B42-81E1-4D07-AFEF-DBDBB11116B4}">
+        <File Id="libexpat_1.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libexpat-1.dll" />
+      </Component>
+      <Component Id="libfontconfig_1.dll" Guid="{6E72BDE1-4D1B-4996-BD0E-2194B20C5240}">
+        <File Id="libfontconfig_1.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libfontconfig-1.dll" />
+      </Component>
+      <Component Id="libgailutil_18.dll" Guid="{CC55401F-4521-4233-B29C-A6D7E25C4085}">
+        <File Id="libgailutil_18.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgailutil-18.dll" />
+      </Component>
+      <Component Id="libgcc_s_dw2_1.dll" Guid="{02A92745-BDF2-4147-A69C-335E009419AB}">
+        <File Id="libgcc_s_dw2_1.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgcc_s_dw2-1.dll" />
+      </Component>
+      <Component Id="libgdk_win32_2.0_0.dll" Guid="{67B966EC-DBF9-4858-8355-DB07CB7132DB}">
+        <File Id="libgdk_win32_2.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgdk-win32-2.0-0.dll" />
+      </Component>
+      <Component Id="libgdkglext_win32_1.0_0.dll" Guid="{BF65572F-A276-44C1-9141-2424696C1EDC}">
+        <File Id="libgdkglext_win32_1.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgdkglext-win32-1.0-0.dll" />
+      </Component>
+      <Component Id="libgdk_pixbuf_2.0_0.dll" Guid="{313A43B9-F579-4E04-B4E8-B5AB4469DFA9}">
+        <File Id="libgdk_pixbuf_2.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgdk_pixbuf-2.0-0.dll" />
+      </Component>
+      <Component Id="libgio_2.0_0.dll" Guid="{03B94171-48FB-4ED0-B75C-5ECEBE5F13FE}">
+        <File Id="libgio_2.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgio-2.0-0.dll" />
+      </Component>
+      <Component Id="libglib_2.0_0.dll" Guid="{365C8109-91C9-48B2-AFB0-9E0AD654300F}">
+        <File Id="libglib_2.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libglib-2.0-0.dll" />
+      </Component>
+      <Component Id="libgmodule_2.0_0.dll" Guid="{BDD6879C-A7CB-4CB0-8BF2-73B1AB8D6211}">
+        <File Id="libgmodule_2.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgmodule-2.0-0.dll" />
+      </Component>
+      <Component Id="libgobject_2.0_0.dll" Guid="{C17B5A37-5815-434F-8649-4A3CE3412FFE}">
+        <File Id="libgobject_2.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgobject-2.0-0.dll" />
+      </Component>
+      <Component Id="libgthread_2.0_0.dll" Guid="{82F3A357-6695-4A72-93E8-12AD98CC2F66}">
+        <File Id="libgthread_2.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgthread-2.0-0.dll" />
+      </Component>
+      <Component Id="libgtk_win32_2.0_0.dll" Guid="{5E1EDAC0-23AE-46D8-B474-13EF9A5D2B31}">
+        <File Id="libgtk_win32_2.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgtk-win32-2.0-0.dll" />
+      </Component>
+      <Component Id="libgtkglext_win32_1.0_0.dll" Guid="{E3829021-450B-4B9E-9747-3477EE0BCF7B}">
+        <File Id="libgtkglext_win32_1.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libgtkglext-win32-1.0-0.dll" />
+      </Component>
+      <Component Id="libpango_1.0_0.dll" Guid="{C6F55484-64B6-43F8-A331-87F5A4407F76}">
+        <File Id="libpango_1.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libpango-1.0-0.dll" />
+      </Component>
+      <Component Id="libpangocairo_1.0_0.dll" Guid="{98E1E44C-4367-4838-8319-D0723972F231}">
+        <File Id="libpangocairo_1.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libpangocairo-1.0-0.dll" />
+      </Component>
+      <Component Id="libpangoft2_1.0_0.dll" Guid="{AE26711F-B89F-40D8-A1FB-E1BD6390EE67}">
+        <File Id="libpangoft2_1.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libpangoft2-1.0-0.dll" />
+      </Component>
+      <Component Id="libpangowin32_1.0_0.dll" Guid="{59808BED-0094-4B72-98F2-642504C19ED3}">
+        <File Id="libpangowin32_1.0_0.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libpangowin32-1.0-0.dll" />
+      </Component>
+      <Component Id="libpng14_14.dll" Guid="{1AB0A1F0-5487-4977-AF52-F68D1B981C99}">
+        <File Id="libpng14_14.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libpng14-14.dll" />
+      </Component>
+      <Component Id="libstdc___6.dll" Guid="{5E562988-9595-43D0-AF91-D9F439116387}">
+        <File Id="libstdc___6.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libstdc++-6.dll" />
+      </Component>
+      <Component Id="libzip.dll" Guid="{A845F2FD-57D6-4664-BAB6-30D741336668}">
+        <File Id="libzip.dll" KeyPath="yes" Source="$(var.GtkLibDir)\libzip.dll" />
+      </Component>
+      <Component Id="pango_querymodules.exe" Guid="{1A842482-A3C1-4E15-9D5C-1DC09589EB1E}">
+        <File Id="pango_querymodules.exe" KeyPath="yes" Source="$(var.GtkLibDir)\pango-querymodules.exe" />
+      </Component>
+      <Component Id="tbb.dll" Guid="{A7106677-283B-4DFC-ABEC-F75952CDFA1E}">
+        <File Id="tbb.dll" KeyPath="yes" Source="$(var.GtkLibDir)\tbb.dll" />
+      </Component>
+      <Component Id="zlib1.dll" Guid="{991CD95A-7296-48F9-B3B7-F4247606F78E}">
+        <File Id="zlib1.dll" KeyPath="yes" Source="$(var.GtkLibDir)\zlib1.dll" />
+      </Component>
+      <Directory Id="etc" Name="etc">
+        <Directory Id="fonts" Name="fonts">
+          <Component Id="fonts.conf" Guid="{B36F828A-72DC-4404-A068-FBC6A9C837F0}">
+            <File Id="fonts.conf" KeyPath="yes" Source="$(var.GtkLibDir)\etc\fonts\fonts.conf" />
+          </Component>
+        </Directory>
+        <Directory Id="gtk_2.0" Name="gtk-2.0">
+          <Component Id="gtk.immodules" Guid="{42D23A1B-1E51-4616-A721-1E0F3D863811}">
+            <File Id="gtk.immodules" KeyPath="yes" Source="$(var.GtkLibDir)\etc\gtk-2.0\gtk.immodules" />
+          </Component>
+          <Component Id="im_multipress.conf" Guid="{6E8262AB-53AA-43B8-B3B3-B40A1199D361}">
+            <File Id="im_multipress.conf" KeyPath="yes" Source="$(var.GtkLibDir)\etc\gtk-2.0\im-multipress.conf" />
+          </Component>
+        </Directory>
+        <Directory Id="pango" Name="pango">
+          <Component Id="pango.modules" Guid="{C99CBBF1-1089-4151-90A1-931A1A6FFBAC}">
+            <File Id="pango.modules" KeyPath="yes" Source="$(var.GtkLibDir)\etc\pango\pango.modules" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="lib" Name="lib">
+        <Directory Id="gdk_pixbuf_2.0" Name="gdk-pixbuf-2.0">
+          <Directory Id="_2.10.0" Name="2.10.0">
+            <Component Id="loaders.cache" Guid="{86185339-6C8A-4DB5-81FC-3C7CF1EF8D6E}">
+              <File Id="loaders.cache" KeyPath="yes" Source="$(var.GtkLibDir)\lib\gdk-pixbuf-2.0\2.10.0\loaders.cache" />
+            </Component>
+          </Directory>
+        </Directory>
+        <Directory Id="gtk_2.0_1" Name="gtk-2.0">
+          <Directory Id="_2.10.0_1" Name="2.10.0">
+            <Directory Id="engines" Name="engines">
+              <Component Id="libpixmap.dll" Guid="{30A3F6EC-B214-4F64-A073-BC0C6ECE9749}">
+                <File Id="libpixmap.dll" KeyPath="yes" Source="$(var.GtkLibDir)\lib\gtk-2.0\2.10.0\engines\libpixmap.dll" />
+              </Component>
+              <Component Id="libwimp.dll" Guid="{ED1DB9FD-8EB5-4F13-9862-DFF152638DC1}">
+                <File Id="libwimp.dll" KeyPath="yes" Source="$(var.GtkLibDir)\lib\gtk-2.0\2.10.0\engines\libwimp.dll" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="modules" Name="modules">
+            <Component Id="libgail.dll" Guid="{122B9068-2BF3-48EA-A7F9-D56C42C2586A}">
+              <File Id="libgail.dll" KeyPath="yes" Source="$(var.GtkLibDir)\lib\gtk-2.0\modules\libgail.dll" />
+            </Component>
+          </Directory>
+        </Directory>
+      </Directory>
+      <Directory Id="manifest" Name="manifest">
+        <Component Id="atk_1.32.0_2_win32.mft" Guid="{B63E0C65-E31E-4782-8182-204C01E3B18D}">
+          <File Id="atk_1.32.0_2_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\atk_1.32.0-2_win32.mft" />
+        </Component>
+        <Component Id="cairo_1.10.2_2_win32.mft" Guid="{6B925B2A-6C3A-45EC-9378-A625CA1F912A}">
+          <File Id="cairo_1.10.2_2_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\cairo_1.10.2-2_win32.mft" />
+        </Component>
+        <Component Id="expat_2.0.1_1_win32.mft" Guid="{89FE0F7E-E08F-45CD-8510-F38B6E12564F}">
+          <File Id="expat_2.0.1_1_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\expat_2.0.1-1_win32.mft" />
+        </Component>
+        <Component Id="fontconfig_2.8.0_2_win32.mft" Guid="{1807511C-F616-4503-AC62-58585A495EF7}">
+          <File Id="fontconfig_2.8.0_2_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\fontconfig_2.8.0-2_win32.mft" />
+        </Component>
+        <Component Id="freetype_2.4.2_1_win32.mft" Guid="{21F16C7B-3BC4-48DB-B9DB-9587AD34C050}">
+          <File Id="freetype_2.4.2_1_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\freetype_2.4.2-1_win32.mft" />
+        </Component>
+        <Component Id="gdk_pixbuf_2.24.0_1_win32.mft" Guid="{0A1CCBAC-5636-4469-958F-CCEEAAADD9EC}">
+          <File Id="gdk_pixbuf_2.24.0_1_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\gdk-pixbuf_2.24.0-1_win32.mft" />
+        </Component>
+        <Component Id="gettext_runtime_0.18.1.1_2_win32.mft" Guid="{6B92C726-642F-45C1-92ED-76FAEE4BA4BB}">
+          <File Id="gettext_runtime_0.18.1.1_2_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\gettext-runtime_0.18.1.1-2_win32.mft" />
+        </Component>
+        <Component Id="glib_2.28.8_1_win32.mft" Guid="{00140881-5B03-48E0-A5B5-8D9FBAC7A489}">
+          <File Id="glib_2.28.8_1_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\glib_2.28.8-1_win32.mft" />
+        </Component>
+        <Component Id="gtk__2.24.10_1_win32.mft" Guid="{73AF8E4C-417B-40A0-97D2-99744DC362BF}">
+          <File Id="gtk__2.24.10_1_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\gtk+_2.24.10-1_win32.mft" />
+        </Component>
+        <Component Id="libpng_1.4.3_1_win32.mft" Guid="{25A1AA43-A36C-4C72-BD9F-0F108D0077F1}">
+          <File Id="libpng_1.4.3_1_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\libpng_1.4.3-1_win32.mft" />
+        </Component>
+        <Component Id="pango_1.29.4_1_win32.mft" Guid="{0AB98BA2-A886-4368-8D29-242C3BD6D95D}">
+          <File Id="pango_1.29.4_1_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\pango_1.29.4-1_win32.mft" />
+        </Component>
+        <Component Id="zlib_1.2.5_2_win32.mft" Guid="{2619BD24-2ED7-47EB-97ED-A1C89ABA22E7}">
+          <File Id="zlib_1.2.5_2_win32.mft" KeyPath="yes" Source="$(var.GtkLibDir)\manifest\zlib_1.2.5-2_win32.mft" />
+        </Component>
+      </Directory>
+      <Directory Id="share" Name="share">
+        <Directory Id="doc" Name="doc">
+          <Directory Id="cairo_1.10.2_2_win32" Name="cairo_1.10.2-2_win32">
+            <Component Id="COPYING" Guid="{E6B05A41-B1D7-4033-A779-349E28DF1F2D}">
+              <File Id="COPYING" KeyPath="yes" Source="$(var.GtkLibDir)\share\doc\cairo_1.10.2-2_win32\COPYING" />
+            </Component>
+            <Component Id="COPYING_LGPL_2.1" Guid="{7F335E2A-0C36-459F-904B-F6AD8E097C47}">
+              <File Id="COPYING_LGPL_2.1" KeyPath="yes" Source="$(var.GtkLibDir)\share\doc\cairo_1.10.2-2_win32\COPYING-LGPL-2.1" />
+            </Component>
+            <Component Id="COPYING_MPL_1.1" Guid="{1289C48D-24B2-42BB-A5A5-A14378B5A9F8}">
+              <File Id="COPYING_MPL_1.1" KeyPath="yes" Source="$(var.GtkLibDir)\share\doc\cairo_1.10.2-2_win32\COPYING-MPL-1.1" />
+            </Component>
+          </Directory>
+          <Directory Id="glib_2.28.8" Name="glib-2.28.8">
+            <Component Id="COPYING_1" Guid="{F5BCA3E9-D4B5-4DF3-9B34-9B728D7444D5}">
+              <File Id="COPYING_1" KeyPath="yes" Source="$(var.GtkLibDir)\share\doc\glib-2.28.8\COPYING" />
+            </Component>
+          </Directory>
+          <Directory Id="gtk__2.24.10" Name="gtk+-2.24.10">
+            <Component Id="COPYING_2" Guid="{7ECB6871-A305-492F-AEF8-74334292CB51}">
+              <File Id="COPYING_2" KeyPath="yes" Source="$(var.GtkLibDir)\share\doc\gtk+-2.24.10\COPYING" />
+            </Component>
+          </Directory>
+          <Directory Id="pango_1.29.4" Name="pango-1.29.4">
+            <Component Id="COPYING_3" Guid="{C3DD12B8-CCCB-446D-B6B7-8CE6C9BCE426}">
+              <File Id="COPYING_3" KeyPath="yes" Source="$(var.GtkLibDir)\share\doc\pango-1.29.4\COPYING" />
+            </Component>
+          </Directory>
+        </Directory>
+        <Directory Id="locale" Name="locale">
+          <Component Id="locale.alias" Guid="{377708B4-1996-414D-B68D-9D49018DC656}">
+            <File Id="locale.alias" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\locale.alias" />
+          </Component>
+          <Directory Id="af" Name="af">
+            <Directory Id="LC_MESSAGES" Name="LC_MESSAGES">
+              <Component Id="atk10.mo" Guid="{2BD4F5AB-42DA-4FF0-BF26-4A60230EA1C5}">
+                <File Id="atk10.mo" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\af\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo" Guid="{8DE626B5-F8E7-415E-915E-EA25A3E4DBAA}">
+                <File Id="gdk_pixbuf.mo" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\af\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo" Guid="{686E2576-FF68-4178-A97A-65EFA2D3927C}">
+                <File Id="glib20.mo" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\af\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo" Guid="{4DC680A4-5939-4D38-B132-2EBBA715824D}">
+                <File Id="gtk20_properties.mo" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\af\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo" Guid="{1CAC14E4-4CDD-432A-A819-98F43A98EB67}">
+                <File Id="gtk20.mo" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\af\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="am" Name="am">
+            <Directory Id="LC_MESSAGES_1" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_1" Guid="{E15B10C6-30B9-465F-904A-1B2B0315B739}">
+                <File Id="atk10.mo_1" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\am\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="glib20.mo_1" Guid="{00DACA9D-8685-4AE3-B2A7-6D89357D6F7A}">
+                <File Id="glib20.mo_1" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\am\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_1" Guid="{4F133EF1-A6DA-48B9-BF05-F708428A30DB}">
+                <File Id="gtk20_properties.mo_1" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\am\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_1" Guid="{86306AC6-A790-400E-A2B2-8BB9A01FA36C}">
+                <File Id="gtk20.mo_1" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\am\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ang" Name="ang">
+            <Directory Id="LC_MESSAGES_2" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_1" Guid="{51B6B578-925A-4258-B531-276D962FA2B4}">
+                <File Id="gdk_pixbuf.mo_1" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ang\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_2" Guid="{7F6484C0-A887-4E9A-B5FD-4CEABF590D67}">
+                <File Id="gtk20_properties.mo_2" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ang\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_2" Guid="{36F4C381-ECEF-4BC1-A3E2-E51B0490125A}">
+                <File Id="gtk20.mo_2" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ang\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ar" Name="ar">
+            <Directory Id="LC_MESSAGES_3" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_2" Guid="{ADA4A7FD-85EB-4AD2-B02F-134841B7EB50}">
+                <File Id="atk10.mo_2" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ar\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_2" Guid="{2D5EB876-61DD-4F73-9077-13023592F2A4}">
+                <File Id="gdk_pixbuf.mo_2" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ar\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_2" Guid="{EEB49F07-924D-4174-B2CD-3E4F6B54B09F}">
+                <File Id="glib20.mo_2" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ar\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_3" Guid="{B3C86C69-B5BF-4E31-AD79-83DEE46AC492}">
+                <File Id="gtk20_properties.mo_3" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ar\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_3" Guid="{4E78F94B-1064-41DE-8A45-49C3F40A758B}">
+                <File Id="gtk20.mo_3" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ar\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="as" Name="as">
+            <Directory Id="LC_MESSAGES_4" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_3" Guid="{569B55E2-41D8-4A6A-BCA6-8159EB124716}">
+                <File Id="atk10.mo_3" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\as\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_3" Guid="{6719B4CE-1F4E-47FF-834D-D572784B833D}">
+                <File Id="gdk_pixbuf.mo_3" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\as\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_3" Guid="{5FFB8D19-4EB0-46D4-A7A7-F53295839E59}">
+                <File Id="glib20.mo_3" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\as\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_4" Guid="{8F64EA70-D7C3-4A9E-9777-A8450C9CB005}">
+                <File Id="gtk20_properties.mo_4" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\as\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_4" Guid="{5373EABB-D762-488C-A602-8EF3472281DD}">
+                <File Id="gtk20.mo_4" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\as\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ast" Name="ast">
+            <Directory Id="LC_MESSAGES_5" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_4" Guid="{90AF7852-2DCF-49DA-BCFC-6E7E0FC6648F}">
+                <File Id="atk10.mo_4" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ast\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_4" Guid="{093F9912-98EB-4462-9646-12195655FE96}">
+                <File Id="gdk_pixbuf.mo_4" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ast\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_4" Guid="{6738404D-F406-4DFD-BE20-30436DD3A527}">
+                <File Id="glib20.mo_4" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ast\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_5" Guid="{F0F51AFE-D788-4A9A-8AD5-28B8A9E6DA6C}">
+                <File Id="gtk20_properties.mo_5" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ast\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_5" Guid="{217FE4FD-AD63-4122-A14C-84022FADC70B}">
+                <File Id="gtk20.mo_5" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ast\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="az" Name="az">
+            <Directory Id="LC_MESSAGES_6" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_5" Guid="{6C55E6FB-F262-499E-A925-9DC47BDC4C60}">
+                <File Id="atk10.mo_5" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\az\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_5" Guid="{3715D7F1-A42D-411E-886D-0A22FF48DC7C}">
+                <File Id="gdk_pixbuf.mo_5" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\az\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_5" Guid="{C707F15B-10CB-40B3-B803-87CCF9B3B12B}">
+                <File Id="glib20.mo_5" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\az\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_6" Guid="{C2B154E3-8030-4C9C-8E7B-164A0D66FA20}">
+                <File Id="gtk20_properties.mo_6" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\az\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_6" Guid="{837CDC02-F8A7-47C9-8A65-7E002540E119}">
+                <File Id="gtk20.mo_6" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\az\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="az_IR" Name="az_IR">
+            <Directory Id="LC_MESSAGES_7" Name="LC_MESSAGES">
+              <Component Id="gtk20_properties.mo_7" Guid="{07316B24-F25B-4374-9705-B16A99F382A6}">
+                <File Id="gtk20_properties.mo_7" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\az_IR\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_7" Guid="{5F19312A-81B3-4E66-B911-772AA5DE5687}">
+                <File Id="gtk20.mo_7" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\az_IR\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="be" Name="be">
+            <Directory Id="LC_MESSAGES_8" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_6" Guid="{59D4D3F3-C161-4002-A35F-85FD4CE7E0FA}">
+                <File Id="atk10.mo_6" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_6" Guid="{03198776-CCFA-4ADC-B73E-3253723DF426}">
+                <File Id="gdk_pixbuf.mo_6" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_6" Guid="{7A40B128-6005-45DB-BC45-927F4D9A4C4D}">
+                <File Id="glib20.mo_6" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_8" Guid="{DC202985-0BF6-43A5-8FF4-B3D1768B51DC}">
+                <File Id="gtk20_properties.mo_8" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_8" Guid="{B3F82993-A6FD-43B9-A515-5BCC5CF8899C}">
+                <File Id="gtk20.mo_8" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="be_latin" Name="be@latin">
+            <Directory Id="LC_MESSAGES_9" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_7" Guid="{46E2609A-E535-4174-ABBC-C84F6A923C6C}">
+                <File Id="atk10.mo_7" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be@latin\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_7" Guid="{6BBAA9CA-5706-4178-9758-AD178A6ECA6F}">
+                <File Id="gdk_pixbuf.mo_7" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be@latin\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_7" Guid="{B979811C-4937-435C-A79D-5BF2E8AE9C17}">
+                <File Id="glib20.mo_7" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be@latin\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_9" Guid="{D29D6910-63BE-4E8C-BBC6-FD9352AC970D}">
+                <File Id="gtk20_properties.mo_9" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be@latin\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_9" Guid="{DADB969E-E4BB-4CFB-B856-A9CDCD7254FC}">
+                <File Id="gtk20.mo_9" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\be@latin\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="bg" Name="bg">
+            <Directory Id="LC_MESSAGES_10" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_8" Guid="{56909DD2-5928-4794-80FD-6276C4726D3D}">
+                <File Id="atk10.mo_8" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bg\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_8" Guid="{7A4455B4-C958-4576-B96B-CAECB6F07E9A}">
+                <File Id="gdk_pixbuf.mo_8" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bg\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_8" Guid="{2E1E364E-3365-4390-99A7-64001D7FC693}">
+                <File Id="glib20.mo_8" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bg\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_10" Guid="{45DFA198-704F-4B40-9F26-05BF692EC63E}">
+                <File Id="gtk20_properties.mo_10" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bg\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_10" Guid="{B745A96F-5D1B-4939-8A2A-DBEFC0F8596D}">
+                <File Id="gtk20.mo_10" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bg\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="bn" Name="bn">
+            <Directory Id="LC_MESSAGES_11" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_9" Guid="{6127EAA8-8B3A-4DCD-9C8D-2ABF6FA6C9D1}">
+                <File Id="atk10.mo_9" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_9" Guid="{8C429CCA-ED50-450A-97B9-C22744E5BA76}">
+                <File Id="gdk_pixbuf.mo_9" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_9" Guid="{48D6D8F1-1FC6-4328-A41D-A5F41521D8CF}">
+                <File Id="glib20.mo_9" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_11" Guid="{6528A677-64CA-4B79-99A6-61C604570662}">
+                <File Id="gtk20_properties.mo_11" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_11" Guid="{5B03D1EB-B196-48EF-BE39-B852FA7C0896}">
+                <File Id="gtk20.mo_11" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="bn_IN" Name="bn_IN">
+            <Directory Id="LC_MESSAGES_12" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_10" Guid="{4DE97747-0031-4AFD-8491-6614819F016B}">
+                <File Id="atk10.mo_10" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn_IN\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_10" Guid="{0263E79F-9E48-428B-AAA0-AFF60BA9531B}">
+                <File Id="gdk_pixbuf.mo_10" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn_IN\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_10" Guid="{701CF784-D9E2-422A-A2DE-05814F49AD0A}">
+                <File Id="glib20.mo_10" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn_IN\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_12" Guid="{D5A11080-5DE0-4B39-B0B8-C2533B63343D}">
+                <File Id="gtk20_properties.mo_12" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn_IN\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_12" Guid="{C9D4DF28-9D6D-499E-9F38-078F4FAE5F36}">
+                <File Id="gtk20.mo_12" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bn_IN\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="br" Name="br">
+            <Directory Id="LC_MESSAGES_13" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_11" Guid="{296451FE-490E-447E-8C22-B0CC4316F22B}">
+                <File Id="gdk_pixbuf.mo_11" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\br\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_13" Guid="{C7799F67-EEE4-48D8-A417-27B6DF289120}">
+                <File Id="gtk20_properties.mo_13" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\br\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_13" Guid="{69D13E16-F7FE-4830-82BA-A244CFDC0884}">
+                <File Id="gtk20.mo_13" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\br\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="bs" Name="bs">
+            <Directory Id="LC_MESSAGES_14" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_11" Guid="{98D21EB8-A0E3-4856-BC6F-A3FF42344E5F}">
+                <File Id="atk10.mo_11" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bs\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_12" Guid="{BC972D3C-8C36-4CD8-9348-B357382AB3DD}">
+                <File Id="gdk_pixbuf.mo_12" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bs\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_11" Guid="{C85FBAB4-09E7-4BC4-94CB-18ACD0F7D1A2}">
+                <File Id="glib20.mo_11" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bs\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_14" Guid="{2B4BD864-BEA3-485A-8AB8-B333177049FD}">
+                <File Id="gtk20_properties.mo_14" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bs\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_14" Guid="{01843D28-0819-4998-B415-A6A363C57581}">
+                <File Id="gtk20.mo_14" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\bs\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ca" Name="ca">
+            <Directory Id="LC_MESSAGES_15" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_12" Guid="{0707CBCE-3569-4F11-A147-190108FCF23F}">
+                <File Id="atk10.mo_12" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_13" Guid="{608430F9-D0F9-4BA5-A216-9F7FA56FBB7A}">
+                <File Id="gdk_pixbuf.mo_13" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_12" Guid="{4B3D7050-82EA-449A-8851-2D5859496622}">
+                <File Id="glib20.mo_12" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_15" Guid="{D1611E53-FB17-4F73-A2F0-36F331F0F98F}">
+                <File Id="gtk20_properties.mo_15" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_15" Guid="{AB13C286-2BAB-4A37-A72A-4243E63AB61B}">
+                <File Id="gtk20.mo_15" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ca_valencia" Name="ca@valencia">
+            <Directory Id="LC_MESSAGES_16" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_13" Guid="{A46D26D8-47AB-425B-ADC0-30DCDFFE9A6F}">
+                <File Id="atk10.mo_13" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca@valencia\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_14" Guid="{70FB364C-626B-4068-99B6-E57C69BFA68D}">
+                <File Id="gdk_pixbuf.mo_14" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca@valencia\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_13" Guid="{12B3C458-597E-49A8-A069-FE5E8840289E}">
+                <File Id="glib20.mo_13" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca@valencia\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_16" Guid="{B9CF959A-3AB9-4BEA-8B2E-EF039E539C99}">
+                <File Id="gtk20_properties.mo_16" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca@valencia\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_16" Guid="{441D7EFC-17F1-45CA-886E-B496761E345C}">
+                <File Id="gtk20.mo_16" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ca@valencia\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="crh" Name="crh">
+            <Directory Id="LC_MESSAGES_17" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_15" Guid="{B40A2793-DF11-43C7-98A2-505D97B89047}">
+                <File Id="gdk_pixbuf.mo_15" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\crh\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_17" Guid="{DA178B60-E220-4143-BB1E-11A4FD620135}">
+                <File Id="gtk20_properties.mo_17" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\crh\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_17" Guid="{89579F3E-296E-4627-973D-EF1650CF252C}">
+                <File Id="gtk20.mo_17" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\crh\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="cs" Name="cs">
+            <Directory Id="LC_MESSAGES_18" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_14" Guid="{7EE33CCE-070D-4F4C-A04E-E9BEB87AB0C6}">
+                <File Id="atk10.mo_14" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cs\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_16" Guid="{58F8ED38-C72D-40F8-A077-50BFCBE56CF2}">
+                <File Id="gdk_pixbuf.mo_16" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cs\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_14" Guid="{C8F87448-989C-4BAC-96F3-21A6D8FB3B97}">
+                <File Id="glib20.mo_14" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cs\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_18" Guid="{1BF854D8-5EA3-44AB-871A-A623021011C2}">
+                <File Id="gtk20_properties.mo_18" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cs\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_18" Guid="{F5FC2D18-839D-4F28-92FB-CBFF51DDDDEF}">
+                <File Id="gtk20.mo_18" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cs\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="cy" Name="cy">
+            <Directory Id="LC_MESSAGES_19" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_15" Guid="{FD402367-A91E-464C-AA30-68F3CC9E8C9B}">
+                <File Id="atk10.mo_15" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cy\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_17" Guid="{6F9736AD-855D-47B7-8C95-DD6FE560F73D}">
+                <File Id="gdk_pixbuf.mo_17" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cy\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_15" Guid="{D10E1C29-A23C-496C-A922-98953B1BC09F}">
+                <File Id="glib20.mo_15" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cy\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_19" Guid="{0BADC52F-1F48-4653-BF4B-6280AC988EEC}">
+                <File Id="gtk20_properties.mo_19" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cy\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_19" Guid="{B76151BF-9A02-4367-8690-C2A639F98F1E}">
+                <File Id="gtk20.mo_19" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\cy\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="da" Name="da">
+            <Directory Id="LC_MESSAGES_20" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_16" Guid="{37B60FAA-EAAF-4D55-ABD4-4496C2C80860}">
+                <File Id="atk10.mo_16" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\da\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_18" Guid="{7E2B53AC-952A-47D9-8438-30C1021E4CB8}">
+                <File Id="gdk_pixbuf.mo_18" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\da\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_16" Guid="{CDFD3527-88DC-491B-945E-BA9208830982}">
+                <File Id="glib20.mo_16" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\da\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_20" Guid="{FB5D90A3-DF02-403A-8730-4243902F5F94}">
+                <File Id="gtk20_properties.mo_20" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\da\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_20" Guid="{4652788C-51F9-46BE-BBF9-A1F010C28051}">
+                <File Id="gtk20.mo_20" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\da\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="de" Name="de">
+            <Directory Id="LC_MESSAGES_21" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_17" Guid="{B6D91924-1FD2-4BB1-B14D-FDD70B2A8F78}">
+                <File Id="atk10.mo_17" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\de\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_19" Guid="{AA705EB6-1F61-4B7D-918B-072BF6448482}">
+                <File Id="gdk_pixbuf.mo_19" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\de\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_17" Guid="{BCFE2F90-4C2D-49B8-873B-3BDF2056EDE4}">
+                <File Id="glib20.mo_17" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\de\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_21" Guid="{2504AB68-8B06-4E59-91BD-9A5AFAC19CB1}">
+                <File Id="gtk20_properties.mo_21" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\de\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_21" Guid="{6CAB9DFB-54D5-44A4-B93F-B1898F455798}">
+                <File Id="gtk20.mo_21" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\de\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="dz" Name="dz">
+            <Directory Id="LC_MESSAGES_22" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_18" Guid="{B906B156-556A-444B-9D7E-CF7872F96914}">
+                <File Id="atk10.mo_18" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\dz\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_20" Guid="{1B2F1C38-B677-412C-8787-EF3F1BE153F8}">
+                <File Id="gdk_pixbuf.mo_20" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\dz\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_18" Guid="{E91986F2-C483-41FF-A502-85F825877FF3}">
+                <File Id="glib20.mo_18" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\dz\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_22" Guid="{07F80832-5122-4E13-B7DE-9DA55827C78A}">
+                <File Id="gtk20_properties.mo_22" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\dz\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_22" Guid="{F7CEDD51-1162-4469-8D42-B25786BBC6C9}">
+                <File Id="gtk20.mo_22" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\dz\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="el" Name="el">
+            <Directory Id="LC_MESSAGES_23" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_19" Guid="{462E2D53-BCC6-4510-B581-688F0108CC4F}">
+                <File Id="atk10.mo_19" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\el\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_21" Guid="{4028B218-8374-477E-B425-40837113A06E}">
+                <File Id="gdk_pixbuf.mo_21" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\el\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_19" Guid="{FD48D4A1-ECBC-4EA1-90A8-ED642D3CC696}">
+                <File Id="glib20.mo_19" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\el\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_23" Guid="{5A4175CF-B464-40AE-82E3-990FFC2B8159}">
+                <File Id="gtk20_properties.mo_23" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\el\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_23" Guid="{13515E03-1E76-4849-9DC9-DAA9A9D6B81F}">
+                <File Id="gtk20.mo_23" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\el\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="en_shaw" Name="en@shaw">
+            <Directory Id="LC_MESSAGES_24" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_20" Guid="{E6B9FBD1-9ED0-4706-9D9C-0D28552223CB}">
+                <File Id="atk10.mo_20" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en@shaw\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_22" Guid="{30BB0FCE-9BB8-4241-BE34-A852A89AB123}">
+                <File Id="gdk_pixbuf.mo_22" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en@shaw\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_20" Guid="{CF5C205C-3A1B-4FFA-8D58-9F78F88578CD}">
+                <File Id="glib20.mo_20" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en@shaw\LC_MESSAGES\glib20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="en_CA" Name="en_CA">
+            <Directory Id="LC_MESSAGES_25" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_21" Guid="{03DD970B-F4CA-4F05-A4A8-5D0022218060}">
+                <File Id="atk10.mo_21" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_CA\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_23" Guid="{D91AF0B0-C802-481A-B55B-3E4C0E907B2B}">
+                <File Id="gdk_pixbuf.mo_23" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_CA\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_21" Guid="{87C2832B-154E-41E4-B6FD-A3F596A8FFD5}">
+                <File Id="glib20.mo_21" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_CA\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_24" Guid="{E55F9C3E-229B-4C0D-B8FD-B47342D834A0}">
+                <File Id="gtk20_properties.mo_24" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_CA\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_24" Guid="{1A913346-0375-4DFC-8CA7-66ADCBC8B421}">
+                <File Id="gtk20.mo_24" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_CA\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="en_GB" Name="en_GB">
+            <Directory Id="LC_MESSAGES_26" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_22" Guid="{96EDB5A2-1E8B-41D0-A977-A24E6A6533B1}">
+                <File Id="atk10.mo_22" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_GB\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_24" Guid="{8DF8FF25-FF31-4CD2-A180-5A80AF3C99D5}">
+                <File Id="gdk_pixbuf.mo_24" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_GB\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_22" Guid="{1C147C48-327A-4B27-BDA9-7391795AC59F}">
+                <File Id="glib20.mo_22" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_GB\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_25" Guid="{37905132-7B14-48B7-B068-E9FBF965F2CA}">
+                <File Id="gtk20_properties.mo_25" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_GB\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_25" Guid="{7EB2C7F6-F18E-4B3B-BFF1-ADD2210259B0}">
+                <File Id="gtk20.mo_25" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\en_GB\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="eo" Name="eo">
+            <Directory Id="LC_MESSAGES_27" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_23" Guid="{B6B8766A-52C7-4BD1-83FF-316AB5A8AFA3}">
+                <File Id="atk10.mo_23" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eo\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_25" Guid="{5BE592D7-4CFE-4137-897F-303B41D49147}">
+                <File Id="gdk_pixbuf.mo_25" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eo\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_23" Guid="{A034D33C-513F-41F1-900C-4D94CA582875}">
+                <File Id="glib20.mo_23" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eo\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_26" Guid="{B22E308C-A202-4EE9-B9DF-DFE199E3127D}">
+                <File Id="gtk20_properties.mo_26" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eo\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_26" Guid="{265C78E4-08F2-4F99-B688-368568450997}">
+                <File Id="gtk20.mo_26" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eo\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="es" Name="es">
+            <Directory Id="LC_MESSAGES_28" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_24" Guid="{18D2C7AE-BE9D-45E2-B479-D63813CABFBD}">
+                <File Id="atk10.mo_24" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\es\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_26" Guid="{4275CDB5-C4A2-48C6-9FAD-EC38F4BE0ED9}">
+                <File Id="gdk_pixbuf.mo_26" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\es\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_24" Guid="{5002B8BE-39A7-4EB9-8E18-44A3DEB616AE}">
+                <File Id="glib20.mo_24" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\es\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_27" Guid="{B87FAF6C-6D19-4843-B2F8-C2F31293832E}">
+                <File Id="gtk20_properties.mo_27" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\es\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_27" Guid="{151CCAF6-4197-4A1E-953D-08F3F6195E24}">
+                <File Id="gtk20.mo_27" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\es\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="et" Name="et">
+            <Directory Id="LC_MESSAGES_29" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_25" Guid="{139804BB-9A57-459F-820A-24C386AD8813}">
+                <File Id="atk10.mo_25" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\et\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_27" Guid="{C4295291-3553-4E3E-B99F-DAAD0A509FE8}">
+                <File Id="gdk_pixbuf.mo_27" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\et\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_25" Guid="{FBA72E52-9306-48FE-A282-E1030D438329}">
+                <File Id="glib20.mo_25" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\et\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_28" Guid="{1A7411DE-0E73-4D5D-9AC1-169601EEE7D9}">
+                <File Id="gtk20_properties.mo_28" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\et\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_28" Guid="{78167C06-55AB-425E-A966-929521A93A73}">
+                <File Id="gtk20.mo_28" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\et\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="eu" Name="eu">
+            <Directory Id="LC_MESSAGES_30" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_26" Guid="{47213302-A9B0-4F98-B000-457112F73E1A}">
+                <File Id="atk10.mo_26" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eu\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_28" Guid="{B7771787-2916-44F0-85BB-13F14289A886}">
+                <File Id="gdk_pixbuf.mo_28" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eu\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_26" Guid="{A494B0DA-DCB8-4C68-BEA5-093F8A533878}">
+                <File Id="glib20.mo_26" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eu\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_29" Guid="{923B4274-D5B6-402A-B79C-BAA7AAE11822}">
+                <File Id="gtk20_properties.mo_29" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eu\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_29" Guid="{D970F452-9604-4894-846F-A6B4B7D266A3}">
+                <File Id="gtk20.mo_29" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\eu\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="fa" Name="fa">
+            <Directory Id="LC_MESSAGES_31" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_27" Guid="{6228DD92-4C89-496A-B25A-892E714FE645}">
+                <File Id="atk10.mo_27" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fa\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_29" Guid="{62E5A9FD-F217-4806-A5CD-7F056A1705D9}">
+                <File Id="gdk_pixbuf.mo_29" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fa\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_27" Guid="{135F7D89-00ED-4140-B0A7-A93DD5A10BD0}">
+                <File Id="glib20.mo_27" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fa\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_30" Guid="{BE9B3915-51FD-4808-A02D-81B66925CDFB}">
+                <File Id="gtk20_properties.mo_30" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fa\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_30" Guid="{4EAAA3ED-B273-4AD1-9D38-5A9A4025223B}">
+                <File Id="gtk20.mo_30" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fa\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="fi" Name="fi">
+            <Directory Id="LC_MESSAGES_32" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_28" Guid="{E9A33C89-2BFE-4329-9CB7-D36F1C20BAAC}">
+                <File Id="atk10.mo_28" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fi\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_30" Guid="{EF24778B-5C04-4E83-A7C0-C741E964819E}">
+                <File Id="gdk_pixbuf.mo_30" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fi\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_28" Guid="{A36B74FE-271A-4BA5-9124-874AA49F1EA5}">
+                <File Id="glib20.mo_28" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fi\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_31" Guid="{AE9C28D3-394A-4E3D-B2CC-31B622EE396E}">
+                <File Id="gtk20_properties.mo_31" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fi\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_31" Guid="{CDD64E6D-31BA-4183-8E22-6072CCAB52C2}">
+                <File Id="gtk20.mo_31" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fi\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="fr" Name="fr">
+            <Directory Id="LC_MESSAGES_33" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_29" Guid="{6A443ACE-53E4-4B3C-89B0-646866F9082D}">
+                <File Id="atk10.mo_29" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fr\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_31" Guid="{20F2C0FF-BA99-4474-86F3-91AD684A69A4}">
+                <File Id="gdk_pixbuf.mo_31" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fr\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_29" Guid="{0E1A8291-8712-4C6E-B5E7-48C3B7C99921}">
+                <File Id="glib20.mo_29" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fr\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_32" Guid="{CB261CBE-CE15-4927-BF62-B37AF6593F06}">
+                <File Id="gtk20_properties.mo_32" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fr\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_32" Guid="{3DA440DC-6CE0-4243-BDDC-5280C5CD1EF6}">
+                <File Id="gtk20.mo_32" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\fr\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ga" Name="ga">
+            <Directory Id="LC_MESSAGES_34" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_30" Guid="{D5147714-F542-421F-A029-0B11A16A6605}">
+                <File Id="atk10.mo_30" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ga\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_32" Guid="{EA4B464C-93A0-4697-9168-84D7DA16782E}">
+                <File Id="gdk_pixbuf.mo_32" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ga\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_30" Guid="{F55A9913-C1EC-45E1-8D7E-BB6E5E713C7B}">
+                <File Id="glib20.mo_30" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ga\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_33" Guid="{D0D979A0-DA2E-4EEB-82A1-64D9678839A4}">
+                <File Id="gtk20_properties.mo_33" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ga\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_33" Guid="{2D999AAD-F2FC-437E-8D05-95BC70786F55}">
+                <File Id="gtk20.mo_33" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ga\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="gl" Name="gl">
+            <Directory Id="LC_MESSAGES_35" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_31" Guid="{337C74FA-99E3-40BA-97AE-E7E47B5E0D8B}">
+                <File Id="atk10.mo_31" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gl\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_33" Guid="{BD128A41-5ECF-4FF5-9619-5038B2E482FA}">
+                <File Id="gdk_pixbuf.mo_33" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gl\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_31" Guid="{AEE5837B-2989-476F-A41F-1AB94748BF2B}">
+                <File Id="glib20.mo_31" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gl\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_34" Guid="{2064D1BA-9683-4D5E-B69C-0B7DA50AD550}">
+                <File Id="gtk20_properties.mo_34" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gl\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_34" Guid="{A4711FD0-FCA4-4B96-8EAE-EFF6618550DD}">
+                <File Id="gtk20.mo_34" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gl\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="gu" Name="gu">
+            <Directory Id="LC_MESSAGES_36" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_32" Guid="{D0354452-C1A5-4DD1-A523-14B6B764B8EB}">
+                <File Id="atk10.mo_32" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gu\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_34" Guid="{BB7753FE-D403-48DA-84CE-4E736AD54BDA}">
+                <File Id="gdk_pixbuf.mo_34" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gu\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_32" Guid="{64746C30-B739-4727-BBA7-86CAE58CD5F3}">
+                <File Id="glib20.mo_32" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gu\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_35" Guid="{CE404FD3-8B4B-4932-AC9E-835741E2420C}">
+                <File Id="gtk20_properties.mo_35" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gu\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_35" Guid="{4526BE21-A90E-4474-95AC-053719C0AFE8}">
+                <File Id="gtk20.mo_35" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\gu\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="he" Name="he">
+            <Directory Id="LC_MESSAGES_37" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_33" Guid="{D4961883-FFA2-4E6B-95FE-DDA0F745CE1C}">
+                <File Id="atk10.mo_33" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\he\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_35" Guid="{5BEC7374-F849-4605-A117-D6FEEA313932}">
+                <File Id="gdk_pixbuf.mo_35" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\he\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_33" Guid="{332EAA1C-A22A-4D2F-B078-DEF7FAA3B5E6}">
+                <File Id="glib20.mo_33" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\he\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_36" Guid="{8154A7B8-C391-4461-BD94-9DACEBD04725}">
+                <File Id="gtk20_properties.mo_36" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\he\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_36" Guid="{8AF0E7AB-FD15-41A6-84B5-63D324E99DEB}">
+                <File Id="gtk20.mo_36" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\he\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="hi" Name="hi">
+            <Directory Id="LC_MESSAGES_38" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_34" Guid="{215F2A13-948F-4F37-B9ED-0AE9A7AD678B}">
+                <File Id="atk10.mo_34" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hi\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_36" Guid="{B403ED14-1331-42EC-AE58-00BFE7BFC300}">
+                <File Id="gdk_pixbuf.mo_36" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hi\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_34" Guid="{21A185CE-B6EF-4C70-9347-8429F72CC1C3}">
+                <File Id="glib20.mo_34" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hi\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_37" Guid="{7A7053CC-3459-4CE6-BED2-6ACFD2487A0C}">
+                <File Id="gtk20_properties.mo_37" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hi\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_37" Guid="{22BF37C4-4C29-478A-B245-7C8C66A98268}">
+                <File Id="gtk20.mo_37" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hi\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="hr" Name="hr">
+            <Directory Id="LC_MESSAGES_39" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_35" Guid="{3C9E80C3-F712-49DD-BEEF-67A5142FE9EA}">
+                <File Id="atk10.mo_35" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hr\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_37" Guid="{E02885AD-4078-4BB5-9627-BAE540A09858}">
+                <File Id="gdk_pixbuf.mo_37" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hr\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_35" Guid="{35BCAFEF-EB80-46B4-94FB-5C5BEFF84322}">
+                <File Id="glib20.mo_35" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hr\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_38" Guid="{F122A564-929B-412D-B2EF-D0DD5E581AFD}">
+                <File Id="gtk20_properties.mo_38" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hr\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_38" Guid="{13273CA4-2079-4867-B8AF-25F4C753D3AE}">
+                <File Id="gtk20.mo_38" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hr\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="hu" Name="hu">
+            <Directory Id="LC_MESSAGES_40" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_36" Guid="{B7F98831-8633-4D2A-A7B8-7FA8A156F773}">
+                <File Id="atk10.mo_36" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hu\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_38" Guid="{36919718-77CA-4BB7-90A6-CFC512025F85}">
+                <File Id="gdk_pixbuf.mo_38" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hu\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_36" Guid="{6ADC1B06-18E3-4F30-8BA8-2D45BEB61AF8}">
+                <File Id="glib20.mo_36" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hu\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_39" Guid="{688A8AFA-4ED1-47A6-8D85-07D808CA6A0C}">
+                <File Id="gtk20_properties.mo_39" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hu\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_39" Guid="{52A8249C-29E9-4E98-AD78-5CB04C99B001}">
+                <File Id="gtk20.mo_39" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hu\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="hy" Name="hy">
+            <Directory Id="LC_MESSAGES_41" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_37" Guid="{915CF5C4-6A31-4BC4-AE0C-B32E835C49DF}">
+                <File Id="atk10.mo_37" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hy\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_39" Guid="{BC14DE72-6563-4553-A7D1-809CFA1F5B36}">
+                <File Id="gdk_pixbuf.mo_39" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hy\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_37" Guid="{64C11E70-0AD3-4F80-BE63-C63EC0C5F2EB}">
+                <File Id="glib20.mo_37" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hy\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_40" Guid="{CD472BC6-EAB2-4821-B4A3-8EF1E33CEF1C}">
+                <File Id="gtk20_properties.mo_40" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hy\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_40" Guid="{CBC63D67-8F01-49DA-AE7D-BB3ED86AA2F2}">
+                <File Id="gtk20.mo_40" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\hy\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ia" Name="ia">
+            <Directory Id="LC_MESSAGES_42" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_40" Guid="{4750D448-4D52-4FD5-BACA-85E1A48F1785}">
+                <File Id="gdk_pixbuf.mo_40" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ia\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_41" Guid="{E12D59BF-1DD1-4C6C-B701-B2316489C192}">
+                <File Id="gtk20_properties.mo_41" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ia\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_41" Guid="{EA24F6F8-8875-4E92-A6A0-0E4D5B66A49D}">
+                <File Id="gtk20.mo_41" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ia\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="id" Name="id">
+            <Directory Id="LC_MESSAGES_43" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_38" Guid="{97929863-F1CF-4642-B11B-F833B41A7FA4}">
+                <File Id="atk10.mo_38" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\id\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_41" Guid="{5FF54E9C-1A08-41DF-910F-354ED7366777}">
+                <File Id="gdk_pixbuf.mo_41" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\id\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_38" Guid="{F0E5107F-5C1B-4093-856A-2D07EB105D63}">
+                <File Id="glib20.mo_38" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\id\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_42" Guid="{AEEAF26B-F44C-4669-A01A-4D5E2E2A31B2}">
+                <File Id="gtk20_properties.mo_42" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\id\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_42" Guid="{78ADAC16-D7D2-47B4-98EF-0DEB1E152FAF}">
+                <File Id="gtk20.mo_42" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\id\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="io" Name="io">
+            <Directory Id="LC_MESSAGES_44" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_42" Guid="{B2735094-1091-4235-BCDF-95D6B8E9A6C8}">
+                <File Id="gdk_pixbuf.mo_42" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\io\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_43" Guid="{42DCD51A-5C1F-4AFA-A2C6-5C46D1A5FCDF}">
+                <File Id="gtk20_properties.mo_43" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\io\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_43" Guid="{A47281C7-CF73-4989-857C-18FD81C4D94D}">
+                <File Id="gtk20.mo_43" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\io\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="is" Name="is">
+            <Directory Id="LC_MESSAGES_45" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_39" Guid="{F6EB8CCB-4769-49C3-8C6E-3007690638EA}">
+                <File Id="atk10.mo_39" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\is\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_43" Guid="{C6976B2A-5767-46A7-8C53-2BB9B62FC8EC}">
+                <File Id="gdk_pixbuf.mo_43" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\is\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_39" Guid="{34D81BD3-1C51-4C49-87C8-20EE2E4D582B}">
+                <File Id="glib20.mo_39" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\is\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_44" Guid="{30174EFC-27ED-43D8-9B16-8E7897E00160}">
+                <File Id="gtk20_properties.mo_44" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\is\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_44" Guid="{B1DAFC80-6C39-411F-8CB2-93F1DAC5150D}">
+                <File Id="gtk20.mo_44" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\is\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="it" Name="it">
+            <Directory Id="LC_MESSAGES_46" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_40" Guid="{4A45BFFD-7052-4599-91A3-253E7C77956A}">
+                <File Id="atk10.mo_40" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\it\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_44" Guid="{746F328F-598A-47BB-BCE3-99BE9F9FE308}">
+                <File Id="gdk_pixbuf.mo_44" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\it\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_40" Guid="{A8E77964-9B94-4DE0-BCBE-290DD95DBA52}">
+                <File Id="glib20.mo_40" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\it\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_45" Guid="{4C358F26-302F-4FC8-9FFB-0C389EEF9E45}">
+                <File Id="gtk20_properties.mo_45" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\it\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_45" Guid="{77EDF00F-4800-42E0-841C-7BA93AD3618A}">
+                <File Id="gtk20.mo_45" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\it\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ja" Name="ja">
+            <Directory Id="LC_MESSAGES_47" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_41" Guid="{1D62CBDF-527C-4532-89E0-53BDA2FEAEB5}">
+                <File Id="atk10.mo_41" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ja\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_45" Guid="{1CDC398E-49D7-4997-847D-98479CF5A1F7}">
+                <File Id="gdk_pixbuf.mo_45" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ja\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_41" Guid="{1D2011D9-4639-4AD6-8BD7-A5A4E28F9C13}">
+                <File Id="glib20.mo_41" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ja\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_46" Guid="{A4DF9CFB-C8D7-4951-AB76-34E8021FF7C0}">
+                <File Id="gtk20_properties.mo_46" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ja\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_46" Guid="{1E4B0EC6-1361-418B-8FC6-CE018AB33599}">
+                <File Id="gtk20.mo_46" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ja\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ka" Name="ka">
+            <Directory Id="LC_MESSAGES_48" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_42" Guid="{70D9AAE5-4C4A-4AD0-946F-7A7BA362D1B6}">
+                <File Id="atk10.mo_42" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ka\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_46" Guid="{60397A83-5EF6-4C28-ADBE-9FBB7C28B1A5}">
+                <File Id="gdk_pixbuf.mo_46" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ka\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_42" Guid="{E4F3D079-620D-4EB5-BC91-B5EDCFB627FF}">
+                <File Id="glib20.mo_42" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ka\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_47" Guid="{FAA8ED17-FF38-4BCB-A110-69D9D0DC10D3}">
+                <File Id="gtk20_properties.mo_47" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ka\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_47" Guid="{731D7EB6-C978-4E53-A4E2-DC04824DB151}">
+                <File Id="gtk20.mo_47" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ka\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="kk" Name="kk">
+            <Directory Id="LC_MESSAGES_49" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_43" Guid="{BA3A6274-B83C-4B9E-B823-7581FA9C86B6}">
+                <File Id="atk10.mo_43" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kk\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="glib20.mo_43" Guid="{C0C6F9BA-DFAE-4A61-96B4-E39F496254B6}">
+                <File Id="glib20.mo_43" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kk\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_48" Guid="{BCE81F0F-32FE-48A5-B15E-1FFC28CC1D44}">
+                <File Id="gtk20_properties.mo_48" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kk\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_48" Guid="{AAE471FA-9ADA-4F67-8900-91BD64D6B47B}">
+                <File Id="gtk20.mo_48" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kk\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="kn" Name="kn">
+            <Directory Id="LC_MESSAGES_50" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_44" Guid="{56A969EE-C39F-463D-B622-D6FEC06EC5CD}">
+                <File Id="atk10.mo_44" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kn\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_47" Guid="{9D0BE1F4-77A6-4E58-846F-196713F4820D}">
+                <File Id="gdk_pixbuf.mo_47" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kn\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_44" Guid="{EE472769-34A0-42EE-8798-C2D3698EB045}">
+                <File Id="glib20.mo_44" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kn\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_49" Guid="{CAABF58A-69E8-4312-965D-BF941223AB0E}">
+                <File Id="gtk20_properties.mo_49" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kn\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_49" Guid="{6DB5D592-1557-457D-BD7C-F9F0B491B859}">
+                <File Id="gtk20.mo_49" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\kn\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ko" Name="ko">
+            <Directory Id="LC_MESSAGES_51" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_45" Guid="{C84BFCF7-3FF9-4B54-BAE5-0E53B797C40B}">
+                <File Id="atk10.mo_45" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ko\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_48" Guid="{5AE33363-E2A5-4D9B-B31B-F09C3DBC5E24}">
+                <File Id="gdk_pixbuf.mo_48" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ko\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_45" Guid="{FD0267D9-B620-4D8C-843B-CF8D72A09C5B}">
+                <File Id="glib20.mo_45" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ko\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_50" Guid="{62F45351-4FE6-43C8-A203-6FCABD022027}">
+                <File Id="gtk20_properties.mo_50" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ko\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_50" Guid="{07B88DB6-66BA-4E67-88DA-3D888351072D}">
+                <File Id="gtk20.mo_50" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ko\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ku" Name="ku">
+            <Directory Id="LC_MESSAGES_52" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_46" Guid="{2721182C-23DA-42CA-9E79-4F07D80907F2}">
+                <File Id="atk10.mo_46" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ku\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_49" Guid="{873E2B58-AB4E-4ACE-8DE0-1DED7F7E8883}">
+                <File Id="gdk_pixbuf.mo_49" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ku\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_46" Guid="{C521E389-C471-49CA-BC5A-7E376B9CF93C}">
+                <File Id="glib20.mo_46" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ku\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_51" Guid="{6842B0A5-867B-4637-93DE-14304BDC5436}">
+                <File Id="gtk20_properties.mo_51" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ku\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_51" Guid="{9E2418D2-E906-48D2-AD4F-CA81C2857445}">
+                <File Id="gtk20.mo_51" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ku\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="li" Name="li">
+            <Directory Id="LC_MESSAGES_53" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_47" Guid="{3F977B55-DE8C-478B-8732-D8063F95FD50}">
+                <File Id="atk10.mo_47" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\li\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_50" Guid="{41D94C1F-BC57-4991-9E2A-10808C10E01B}">
+                <File Id="gdk_pixbuf.mo_50" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\li\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_52" Guid="{5FC55095-87B0-48ED-922D-E1D14948B159}">
+                <File Id="gtk20_properties.mo_52" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\li\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_52" Guid="{C79B76A1-297E-47AE-80B9-8B0976836FC2}">
+                <File Id="gtk20.mo_52" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\li\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="lt" Name="lt">
+            <Directory Id="LC_MESSAGES_54" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_48" Guid="{EFDD0DBC-2DC5-44C3-A578-E26F456309DE}">
+                <File Id="atk10.mo_48" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lt\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_51" Guid="{D9E8D893-A886-4F8B-99F6-9DD85D0ADDAF}">
+                <File Id="gdk_pixbuf.mo_51" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lt\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_47" Guid="{8A897D6A-688E-48F5-B5CE-B29F897D35CC}">
+                <File Id="glib20.mo_47" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lt\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_53" Guid="{5929F2DB-538E-4921-AE07-00892D9602AF}">
+                <File Id="gtk20_properties.mo_53" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lt\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_53" Guid="{D2E1946F-B841-4F13-9704-844149B698E3}">
+                <File Id="gtk20.mo_53" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lt\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="lv" Name="lv">
+            <Directory Id="LC_MESSAGES_55" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_49" Guid="{72500642-6612-4E4F-AA61-119A7ED74EA0}">
+                <File Id="atk10.mo_49" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lv\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_52" Guid="{D284BC9A-73AD-4066-9621-616170FD2E33}">
+                <File Id="gdk_pixbuf.mo_52" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lv\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_48" Guid="{F99988DE-3828-40EF-95BD-8A4C2A6A4272}">
+                <File Id="glib20.mo_48" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lv\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_54" Guid="{DB57F0F2-B381-4AEB-AF14-D92961ACDC0B}">
+                <File Id="gtk20_properties.mo_54" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lv\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_54" Guid="{409666F7-B81A-46D8-93F4-8EC43CB9198F}">
+                <File Id="gtk20.mo_54" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\lv\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="mai" Name="mai">
+            <Directory Id="LC_MESSAGES_56" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_50" Guid="{636C47BB-93A5-4F3C-A020-5DE6E11110BF}">
+                <File Id="atk10.mo_50" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mai\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_53" Guid="{F6D728A0-7ED2-4831-A785-D7392E12A1F2}">
+                <File Id="gdk_pixbuf.mo_53" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mai\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_49" Guid="{9EB67ECD-3674-470E-9FE9-E8D7B1D79FD5}">
+                <File Id="glib20.mo_49" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mai\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_55" Guid="{E46C06C6-EBD2-40CC-8E18-244271297C85}">
+                <File Id="gtk20_properties.mo_55" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mai\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_55" Guid="{09A5B050-8FC3-487C-A16D-6430413D51F4}">
+                <File Id="gtk20.mo_55" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mai\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="mg" Name="mg">
+            <Directory Id="LC_MESSAGES_57" Name="LC_MESSAGES">
+              <Component Id="glib20.mo_50" Guid="{056323F6-CE14-4F61-9133-81F4FB1CF3C9}">
+                <File Id="glib20.mo_50" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mg\LC_MESSAGES\glib20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="mi" Name="mi">
+            <Directory Id="LC_MESSAGES_58" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_54" Guid="{61CD0214-ACC2-436D-BFE7-5593D8072B44}">
+                <File Id="gdk_pixbuf.mo_54" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mi\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_56" Guid="{4647CB21-F501-433E-BB48-FA381FC7DF92}">
+                <File Id="gtk20_properties.mo_56" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mi\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_56" Guid="{8F970416-0E42-49E2-99E0-A4ED0FFC1930}">
+                <File Id="gtk20.mo_56" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mi\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="mk" Name="mk">
+            <Directory Id="LC_MESSAGES_59" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_51" Guid="{D67B4D55-590E-48FC-AFD1-B1128F6C1DD9}">
+                <File Id="atk10.mo_51" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mk\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_55" Guid="{D16D866C-FB39-440A-B137-C21A73735B79}">
+                <File Id="gdk_pixbuf.mo_55" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mk\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_51" Guid="{EF1C4AC6-80EF-4F02-A14E-6A3E651731A9}">
+                <File Id="glib20.mo_51" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mk\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_57" Guid="{B581998D-1EE1-4E49-A1ED-1D899E1C36D6}">
+                <File Id="gtk20_properties.mo_57" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mk\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_57" Guid="{AC3EF3C9-2421-44F6-8586-23ECE4789AE6}">
+                <File Id="gtk20.mo_57" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mk\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ml" Name="ml">
+            <Directory Id="LC_MESSAGES_60" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_52" Guid="{7DB88B23-0970-4517-9C25-CD07283DCEED}">
+                <File Id="atk10.mo_52" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ml\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_56" Guid="{53641DD5-B4F0-4BEA-AC3C-FCFCA92BD902}">
+                <File Id="gdk_pixbuf.mo_56" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ml\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_52" Guid="{7F634805-5AEA-4C9E-9C49-702E88A80B12}">
+                <File Id="glib20.mo_52" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ml\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_58" Guid="{F269D2D4-AC33-42F9-984F-60D4BE605A0C}">
+                <File Id="gtk20_properties.mo_58" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ml\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_58" Guid="{FE8E18C2-1312-47F4-B320-8B7C4622E0C7}">
+                <File Id="gtk20.mo_58" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ml\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="mn" Name="mn">
+            <Directory Id="LC_MESSAGES_61" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_53" Guid="{D7EA599C-01DE-4735-AEB1-137733E275E5}">
+                <File Id="atk10.mo_53" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mn\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_57" Guid="{12D19DCA-4FB6-44B0-B885-30E1301DAA59}">
+                <File Id="gdk_pixbuf.mo_57" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mn\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_53" Guid="{137C0E25-46DB-4E95-9E3E-CA35FFA5BED5}">
+                <File Id="glib20.mo_53" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mn\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_59" Guid="{7F6FEA75-5682-489F-8241-277E90165913}">
+                <File Id="gtk20_properties.mo_59" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mn\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_59" Guid="{9FB8C20A-7B78-41CA-B7ED-180DD4D48E0A}">
+                <File Id="gtk20.mo_59" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mn\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="mr" Name="mr">
+            <Directory Id="LC_MESSAGES_62" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_54" Guid="{7D81651F-896B-43C8-BD7B-4256F2E1F48F}">
+                <File Id="atk10.mo_54" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mr\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_58" Guid="{CE5582F9-40D8-455D-A0D2-92CE04B06194}">
+                <File Id="gdk_pixbuf.mo_58" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mr\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_54" Guid="{3CEF8CB4-77E4-4E65-8447-2817562C5F89}">
+                <File Id="glib20.mo_54" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mr\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_60" Guid="{6AA6C400-346A-4D3D-A4A7-558BA6470707}">
+                <File Id="gtk20_properties.mo_60" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mr\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_60" Guid="{B05AB4C2-6F2C-476A-A7A9-081084CBA559}">
+                <File Id="gtk20.mo_60" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\mr\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ms" Name="ms">
+            <Directory Id="LC_MESSAGES_63" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_55" Guid="{86AB461A-E3B3-4F4E-96D1-5741D15C8A56}">
+                <File Id="atk10.mo_55" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ms\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_59" Guid="{67A040E9-99B4-41DB-9AE3-398CBCEDA3B9}">
+                <File Id="gdk_pixbuf.mo_59" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ms\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_55" Guid="{4FE2F603-A09D-4280-9877-086169E1C7C0}">
+                <File Id="glib20.mo_55" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ms\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_61" Guid="{9B64CBA1-04B4-44BE-80C8-D1E9676FE19A}">
+                <File Id="gtk20_properties.mo_61" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ms\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_61" Guid="{BFE4D34A-CD9F-4732-BBDB-8F4724DC1A03}">
+                <File Id="gtk20.mo_61" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ms\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="my" Name="my">
+            <Directory Id="LC_MESSAGES_64" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_60" Guid="{2B6FC161-C42D-4F06-BA2E-595EDD8DED0C}">
+                <File Id="gdk_pixbuf.mo_60" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\my\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_62" Guid="{82629153-0281-4647-B4A8-E1E890BBB706}">
+                <File Id="gtk20_properties.mo_62" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\my\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_62" Guid="{80E1B5DE-0298-4D5B-AE3F-FF4E2E73ACB7}">
+                <File Id="gtk20.mo_62" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\my\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="nb" Name="nb">
+            <Directory Id="LC_MESSAGES_65" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_56" Guid="{559097C6-53E7-494D-9C6B-84932F92E694}">
+                <File Id="atk10.mo_56" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nb\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_61" Guid="{37C24EB5-4B33-4C1D-8A1D-E836AB867533}">
+                <File Id="gdk_pixbuf.mo_61" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nb\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_56" Guid="{B9F49462-8589-4EFC-BFE5-800E63E7A480}">
+                <File Id="glib20.mo_56" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nb\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_63" Guid="{AD55A7B4-BEF6-4CBE-9843-19044FA3B6C5}">
+                <File Id="gtk20_properties.mo_63" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nb\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_63" Guid="{74C82221-093C-43D9-8F4A-9312397A7E63}">
+                <File Id="gtk20.mo_63" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nb\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="nds" Name="nds">
+            <Directory Id="LC_MESSAGES_66" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_62" Guid="{7F4669F0-58A1-4478-83FC-42E7BC7ABB7F}">
+                <File Id="gdk_pixbuf.mo_62" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nds\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_57" Guid="{7A13434E-0218-4A51-84A4-492897CBBCB9}">
+                <File Id="glib20.mo_57" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nds\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_64" Guid="{A85D5C07-77FE-47D0-A72E-007F1FCE2C39}">
+                <File Id="gtk20_properties.mo_64" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nds\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_64" Guid="{E747C04A-E076-4B3E-89E7-2263DE2F4056}">
+                <File Id="gtk20.mo_64" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nds\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ne" Name="ne">
+            <Directory Id="LC_MESSAGES_67" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_57" Guid="{CCA9B2AB-A67E-40AC-A3EF-4AE3D30A4D2E}">
+                <File Id="atk10.mo_57" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ne\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_63" Guid="{B7063CD5-21CB-4B60-8C30-A820C8FC1437}">
+                <File Id="gdk_pixbuf.mo_63" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ne\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_58" Guid="{721B2C82-0BB9-4B2C-89F8-DCC5FF05705E}">
+                <File Id="glib20.mo_58" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ne\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_65" Guid="{8F45D164-8C0A-4257-8C23-AE59EC8F18F0}">
+                <File Id="gtk20_properties.mo_65" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ne\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_65" Guid="{62E306C1-3522-4F5C-8545-79C5271BA4A9}">
+                <File Id="gtk20.mo_65" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ne\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="nl" Name="nl">
+            <Directory Id="LC_MESSAGES_68" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_58" Guid="{E90CE390-8167-4769-975E-7BA9D414969B}">
+                <File Id="atk10.mo_58" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nl\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_64" Guid="{A1CE3F06-85C0-4E04-AE00-5D964D2F8CAA}">
+                <File Id="gdk_pixbuf.mo_64" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nl\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_59" Guid="{2CE6B513-3037-4D77-B1C7-8B092FD544F5}">
+                <File Id="glib20.mo_59" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nl\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_66" Guid="{80A2391B-8A77-4457-A4F4-7504725D7524}">
+                <File Id="gtk20_properties.mo_66" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nl\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_66" Guid="{1C54E43A-C78B-48F3-9E70-03CAA07E2619}">
+                <File Id="gtk20.mo_66" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nl\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="nn" Name="nn">
+            <Directory Id="LC_MESSAGES_69" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_59" Guid="{BCA4B650-5B77-45E4-83C0-B2AEBB4FD9F7}">
+                <File Id="atk10.mo_59" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nn\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_65" Guid="{2E70DEA8-AF3A-4649-976A-835EDC5C9774}">
+                <File Id="gdk_pixbuf.mo_65" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nn\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_60" Guid="{AF6A9574-7122-4ED3-978D-0E8062A0E672}">
+                <File Id="glib20.mo_60" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nn\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_67" Guid="{53297403-70F6-4C90-9B6A-69CE53A3C1FB}">
+                <File Id="gtk20_properties.mo_67" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nn\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_67" Guid="{F07BF630-4532-466C-8170-43CFE0301BE5}">
+                <File Id="gtk20.mo_67" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nn\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="nso" Name="nso">
+            <Directory Id="LC_MESSAGES_70" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_66" Guid="{112CB528-C3B3-4EBF-872F-7AC762F24D19}">
+                <File Id="gdk_pixbuf.mo_66" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nso\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_68" Guid="{71CA14C2-9EFE-4F00-9275-52F4600C6121}">
+                <File Id="gtk20_properties.mo_68" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nso\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_68" Guid="{2F23ABE6-E3A3-4751-9B6B-E1A0B9482199}">
+                <File Id="gtk20.mo_68" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\nso\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="oc" Name="oc">
+            <Directory Id="LC_MESSAGES_71" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_60" Guid="{2A252F52-C8B1-4319-8086-46F690F1BE16}">
+                <File Id="atk10.mo_60" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\oc\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_67" Guid="{44C45F1E-AB9A-443D-80D3-F62ECBB90AC2}">
+                <File Id="gdk_pixbuf.mo_67" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\oc\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_61" Guid="{13DDBA5D-12FD-4243-9EDD-53830803ED5F}">
+                <File Id="glib20.mo_61" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\oc\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_69" Guid="{9E3B3744-35EA-4FD4-94D1-0AF290EDF04E}">
+                <File Id="gtk20_properties.mo_69" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\oc\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_69" Guid="{B041F6A6-CE76-4908-8351-E9B38B761876}">
+                <File Id="gtk20.mo_69" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\oc\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="or" Name="or">
+            <Directory Id="LC_MESSAGES_72" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_61" Guid="{BE71FDAF-5ADF-46B3-8946-8CA0C298F2D0}">
+                <File Id="atk10.mo_61" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\or\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_68" Guid="{53C982B1-ED58-4125-B34A-7193CEBFDA44}">
+                <File Id="gdk_pixbuf.mo_68" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\or\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_62" Guid="{49C14C95-AC69-4021-BC96-C839C8EB2055}">
+                <File Id="glib20.mo_62" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\or\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_70" Guid="{DEF2A57A-4867-41FC-9636-9BD6D4C9B7A3}">
+                <File Id="gtk20_properties.mo_70" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\or\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_70" Guid="{89F903AC-4E88-40DA-95BD-E609CFC21BB2}">
+                <File Id="gtk20.mo_70" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\or\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="pa" Name="pa">
+            <Directory Id="LC_MESSAGES_73" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_62" Guid="{A5DB8975-32A8-457D-9375-093F6103C0E6}">
+                <File Id="atk10.mo_62" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pa\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_69" Guid="{07474F0A-EFB0-4820-AD54-442DF8D1FF7D}">
+                <File Id="gdk_pixbuf.mo_69" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pa\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_63" Guid="{DED79DA6-C204-4F8F-B3C0-FA9FBB116EA4}">
+                <File Id="glib20.mo_63" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pa\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_71" Guid="{7A9A6539-0E56-43EA-9515-DBDE5CD876B8}">
+                <File Id="gtk20_properties.mo_71" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pa\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_71" Guid="{CA82BDEC-2A77-456E-8E4D-8C7D99E37476}">
+                <File Id="gtk20.mo_71" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pa\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="pl" Name="pl">
+            <Directory Id="LC_MESSAGES_74" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_63" Guid="{A80C2DDD-190A-47F4-A611-75435CBD7D82}">
+                <File Id="atk10.mo_63" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pl\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_70" Guid="{6BA3D32F-35B5-48F5-916B-0ACDF8E78258}">
+                <File Id="gdk_pixbuf.mo_70" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pl\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_64" Guid="{41506BEA-862B-4592-B90E-F009948133AE}">
+                <File Id="glib20.mo_64" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pl\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_72" Guid="{F6CF7418-910C-4026-91D8-77E49B428F74}">
+                <File Id="gtk20_properties.mo_72" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pl\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_72" Guid="{07FBD510-4C9B-4F0F-A740-0990D8A7B4E7}">
+                <File Id="gtk20.mo_72" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pl\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ps" Name="ps">
+            <Directory Id="LC_MESSAGES_75" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_64" Guid="{2DBA4B7C-038D-4ACB-A58D-5567D366D505}">
+                <File Id="atk10.mo_64" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ps\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_71" Guid="{D5E8E329-6574-4AE4-94C1-09BE54C5DB9E}">
+                <File Id="gdk_pixbuf.mo_71" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ps\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_65" Guid="{E9B55D35-3F45-4F14-961C-E9A88D0CEB19}">
+                <File Id="glib20.mo_65" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ps\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_73" Guid="{A6AD59D3-41AE-42DA-8DEF-F7BC9B37A51E}">
+                <File Id="gtk20_properties.mo_73" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ps\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_73" Guid="{42801061-D316-4A37-A5B4-E18B3A809309}">
+                <File Id="gtk20.mo_73" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ps\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="pt" Name="pt">
+            <Directory Id="LC_MESSAGES_76" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_65" Guid="{32025ECE-3B48-432A-96F7-4B49F7C55DAA}">
+                <File Id="atk10.mo_65" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_72" Guid="{C9F028B3-BCAF-4A99-B6AE-513AD9F6D064}">
+                <File Id="gdk_pixbuf.mo_72" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_66" Guid="{4135BCCC-D54F-4270-B36A-F1D403D90093}">
+                <File Id="glib20.mo_66" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_74" Guid="{0B56F974-4101-43DC-B139-53585810EEFA}">
+                <File Id="gtk20_properties.mo_74" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_74" Guid="{5130696D-02EE-4044-AA65-E58FF5E37011}">
+                <File Id="gtk20.mo_74" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="pt_BR" Name="pt_BR">
+            <Directory Id="LC_MESSAGES_77" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_66" Guid="{576681FA-7CAC-4BEF-BEDA-87B1E9045B09}">
+                <File Id="atk10.mo_66" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt_BR\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_73" Guid="{6A57F575-9A9A-4D2E-A6A3-65AFE09001B9}">
+                <File Id="gdk_pixbuf.mo_73" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt_BR\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_67" Guid="{38A61592-7A62-4310-92CE-1CD63C27437D}">
+                <File Id="glib20.mo_67" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt_BR\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_75" Guid="{E6A9A931-3524-4270-9643-8F0C437E069E}">
+                <File Id="gtk20_properties.mo_75" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt_BR\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_75" Guid="{FAD90288-23E8-456F-A603-641360E8EC4F}">
+                <File Id="gtk20.mo_75" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\pt_BR\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ro" Name="ro">
+            <Directory Id="LC_MESSAGES_78" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_67" Guid="{9508E206-E58F-418D-82C6-E06FA180BECA}">
+                <File Id="atk10.mo_67" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ro\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_74" Guid="{06336948-81E9-4A1B-B2AE-C38494F59005}">
+                <File Id="gdk_pixbuf.mo_74" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ro\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_68" Guid="{CB51BE22-02CB-4668-9E38-D92BDBCBFB47}">
+                <File Id="glib20.mo_68" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ro\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_76" Guid="{D39B3522-5A57-4B94-9D70-71F532749CF3}">
+                <File Id="gtk20_properties.mo_76" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ro\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_76" Guid="{601FE8EE-9057-4CB0-B638-4E2B2B078230}">
+                <File Id="gtk20.mo_76" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ro\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ru" Name="ru">
+            <Directory Id="LC_MESSAGES_79" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_68" Guid="{DC0FC875-52C4-4E81-982D-AE8BB2252B1B}">
+                <File Id="atk10.mo_68" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ru\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_75" Guid="{83EBDEDA-857D-43F9-BDAD-83ECE5F49B86}">
+                <File Id="gdk_pixbuf.mo_75" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ru\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_69" Guid="{3E029A2C-6430-416E-A162-6DD64453E543}">
+                <File Id="glib20.mo_69" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ru\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_77" Guid="{57B99FEC-47F9-4503-B766-9224E26385B9}">
+                <File Id="gtk20_properties.mo_77" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ru\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_77" Guid="{F3FFB651-5C80-4411-A9A6-71DF36107AE1}">
+                <File Id="gtk20.mo_77" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ru\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="rw" Name="rw">
+            <Directory Id="LC_MESSAGES_80" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_69" Guid="{892BF177-31A0-474F-803E-FD580203D3AF}">
+                <File Id="atk10.mo_69" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\rw\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="glib20.mo_70" Guid="{8E246672-8E7A-4CCE-9139-15A1EFAFD10E}">
+                <File Id="glib20.mo_70" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\rw\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_78" Guid="{C6338E81-5CE9-4F5A-AF45-926C7BA428F8}">
+                <File Id="gtk20_properties.mo_78" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\rw\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_78" Guid="{1175E9DE-BD45-47AE-8362-B8EF3A3B8D84}">
+                <File Id="gtk20.mo_78" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\rw\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="si" Name="si">
+            <Directory Id="LC_MESSAGES_81" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_70" Guid="{12BC9EE9-E71A-4723-AA6F-BE4EA89CBCE0}">
+                <File Id="atk10.mo_70" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\si\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_76" Guid="{4FD21A0D-516B-4EFF-9B07-29F4F62525BF}">
+                <File Id="gdk_pixbuf.mo_76" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\si\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_71" Guid="{98D74FD9-8E0A-4B93-81EF-8BA87E6E9332}">
+                <File Id="glib20.mo_71" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\si\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_79" Guid="{0E9F984C-5846-434D-B995-0CD363E34D54}">
+                <File Id="gtk20_properties.mo_79" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\si\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_79" Guid="{32506858-6ACA-417C-B668-6908D7539289}">
+                <File Id="gtk20.mo_79" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\si\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="sk" Name="sk">
+            <Directory Id="LC_MESSAGES_82" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_71" Guid="{DA701D90-5F75-438F-B366-6698895E93E9}">
+                <File Id="atk10.mo_71" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sk\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_77" Guid="{00B20556-2BEB-4368-847A-D00CC67286C2}">
+                <File Id="gdk_pixbuf.mo_77" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sk\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_72" Guid="{A2D74BF9-0CBD-4BB4-B129-225634B7ED0B}">
+                <File Id="glib20.mo_72" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sk\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_80" Guid="{6166E28B-7F05-4B48-9236-E6E6A5EBF8A9}">
+                <File Id="gtk20_properties.mo_80" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sk\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_80" Guid="{F17761CE-B21D-4073-B43B-841C196E02DB}">
+                <File Id="gtk20.mo_80" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sk\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="sl" Name="sl">
+            <Directory Id="LC_MESSAGES_83" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_72" Guid="{466F17F6-A8E2-4CEA-9796-64D7CA2E3C73}">
+                <File Id="atk10.mo_72" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sl\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_78" Guid="{38BA28F9-10E6-4C8E-8B12-B471B399A5D0}">
+                <File Id="gdk_pixbuf.mo_78" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sl\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_73" Guid="{2DB9CD7F-8838-4BC6-AA23-35BE6CA6C165}">
+                <File Id="glib20.mo_73" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sl\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_81" Guid="{FA6D035A-929F-4781-9B6B-52DD5A4A78EB}">
+                <File Id="gtk20_properties.mo_81" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sl\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_81" Guid="{A55EF30A-131A-4DB4-982E-177E68537588}">
+                <File Id="gtk20.mo_81" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sl\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="sq" Name="sq">
+            <Directory Id="LC_MESSAGES_84" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_73" Guid="{458C984B-78C4-40B9-B954-62E7D2D602F0}">
+                <File Id="atk10.mo_73" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sq\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_79" Guid="{F0A68DCD-B304-44AF-B70E-12406CBA4174}">
+                <File Id="gdk_pixbuf.mo_79" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sq\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_74" Guid="{B92289D2-464E-4D24-AD36-1A2C9EA382BA}">
+                <File Id="glib20.mo_74" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sq\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_82" Guid="{C99F3461-47D6-4AC6-A9D1-0C4FAD7D1550}">
+                <File Id="gtk20_properties.mo_82" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sq\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_82" Guid="{5F1B04E3-7853-42EA-AE7F-9F658CD6B147}">
+                <File Id="gtk20.mo_82" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sq\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="sr" Name="sr">
+            <Directory Id="LC_MESSAGES_85" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_74" Guid="{D5C484AB-532B-4000-903D-15CAE7139CF0}">
+                <File Id="atk10.mo_74" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_80" Guid="{36264BDC-1CB3-42F0-B552-4E81C6774933}">
+                <File Id="gdk_pixbuf.mo_80" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_75" Guid="{51BDB8A2-A82A-4782-AA8B-56B3EE3C2F73}">
+                <File Id="glib20.mo_75" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_83" Guid="{CA8D17DA-5A4A-4459-AD2E-C73F70B82388}">
+                <File Id="gtk20_properties.mo_83" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_83" Guid="{13A977B6-74FB-46E4-9860-C16998E9C68C}">
+                <File Id="gtk20.mo_83" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="sr_ije" Name="sr@ije">
+            <Directory Id="LC_MESSAGES_86" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_75" Guid="{7AEC5043-562E-47D8-95E8-9FFB59D5C013}">
+                <File Id="atk10.mo_75" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@ije\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_81" Guid="{F6C565E3-C60D-49F1-A28A-8A229A8B0336}">
+                <File Id="gdk_pixbuf.mo_81" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@ije\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_76" Guid="{AEE69A9A-0E10-46D8-A1C7-5CD69D5631DD}">
+                <File Id="glib20.mo_76" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@ije\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_84" Guid="{899C7D67-5E0B-49A2-A778-45D2E654B385}">
+                <File Id="gtk20_properties.mo_84" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@ije\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_84" Guid="{D3225BA4-7077-4062-AB2A-97CBBDE3CCA0}">
+                <File Id="gtk20.mo_84" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@ije\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="sr_latin" Name="sr@latin">
+            <Directory Id="LC_MESSAGES_87" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_76" Guid="{13EB76F6-A639-41AC-96EA-232A6F04B544}">
+                <File Id="atk10.mo_76" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@latin\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_82" Guid="{B334AF2A-4B50-4C98-AD6E-9B98A64594E4}">
+                <File Id="gdk_pixbuf.mo_82" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@latin\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_77" Guid="{CAB47A69-DD19-4F15-A4F8-D4249014839F}">
+                <File Id="glib20.mo_77" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@latin\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_85" Guid="{E7DAEB03-3C3E-49FB-88A3-F0FB82ED1565}">
+                <File Id="gtk20_properties.mo_85" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@latin\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_85" Guid="{8295E6F8-E007-49C5-9776-47BCCA58F26A}">
+                <File Id="gtk20.mo_85" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sr@latin\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="sv" Name="sv">
+            <Directory Id="LC_MESSAGES_88" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_77" Guid="{7CACF796-585D-4011-A54F-CA600653DFED}">
+                <File Id="atk10.mo_77" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sv\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_83" Guid="{5E6643F5-40FB-4BAD-AD38-6FF083FCBC97}">
+                <File Id="gdk_pixbuf.mo_83" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sv\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_78" Guid="{8B7E63D1-24CC-43E1-BF46-5BE4ECE1912F}">
+                <File Id="glib20.mo_78" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sv\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_86" Guid="{DFE15A98-2450-4F3F-B694-590C90AD78FC}">
+                <File Id="gtk20_properties.mo_86" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sv\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_86" Guid="{7A87C660-8017-47DE-9726-1DFA5C7511ED}">
+                <File Id="gtk20.mo_86" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\sv\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ta" Name="ta">
+            <Directory Id="LC_MESSAGES_89" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_78" Guid="{46EE8E0A-4D0B-4859-A9ED-D89803316EE2}">
+                <File Id="atk10.mo_78" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ta\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_84" Guid="{F7E3E2B8-4FCA-4B7C-A042-5750447F9DA7}">
+                <File Id="gdk_pixbuf.mo_84" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ta\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_79" Guid="{296E9965-AC27-4F10-90DD-B308F52CECA5}">
+                <File Id="glib20.mo_79" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ta\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_87" Guid="{862710AC-C1D5-4E43-9DC3-A53EE9756770}">
+                <File Id="gtk20_properties.mo_87" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ta\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_87" Guid="{56B1CB63-7DB1-4C76-8A21-668A866CB937}">
+                <File Id="gtk20.mo_87" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ta\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="te" Name="te">
+            <Directory Id="LC_MESSAGES_90" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_79" Guid="{A1388912-5B2D-4AFF-B587-9D36457FDE1D}">
+                <File Id="atk10.mo_79" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\te\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_85" Guid="{0D7A0B92-612A-454B-A654-FF8C5F9C1A18}">
+                <File Id="gdk_pixbuf.mo_85" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\te\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_80" Guid="{92E7A863-94F9-4747-99FB-DB800BA6C926}">
+                <File Id="glib20.mo_80" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\te\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_88" Guid="{E0C19400-AE52-4DD2-BA8C-976CEFA3CDB4}">
+                <File Id="gtk20_properties.mo_88" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\te\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_88" Guid="{F0938FB4-AA88-4D31-9097-71B909B5E65C}">
+                <File Id="gtk20.mo_88" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\te\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="th" Name="th">
+            <Directory Id="LC_MESSAGES_91" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_80" Guid="{5824DB76-31E0-4B2C-B4C8-3CAF496DA9C3}">
+                <File Id="atk10.mo_80" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\th\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_86" Guid="{A29E1342-7C84-44C6-85A3-E50E27D4A478}">
+                <File Id="gdk_pixbuf.mo_86" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\th\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_81" Guid="{9E5EDF5E-205B-44E0-95DD-54167A916062}">
+                <File Id="glib20.mo_81" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\th\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_89" Guid="{39E9C8D5-E03D-4077-8DC6-ACCFD42B76E2}">
+                <File Id="gtk20_properties.mo_89" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\th\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_89" Guid="{32230329-AF74-4B44-951D-A23CAC49F2A5}">
+                <File Id="gtk20.mo_89" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\th\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="tk" Name="tk">
+            <Directory Id="LC_MESSAGES_92" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_81" Guid="{7F6B9322-D5E2-4A62-8424-02ABB5D6612B}">
+                <File Id="atk10.mo_81" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tk\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_87" Guid="{848BC92F-67BD-4264-8C8D-E56A2DB481BF}">
+                <File Id="gdk_pixbuf.mo_87" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tk\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_90" Guid="{B3B747BD-E976-4323-B8E8-977F43158097}">
+                <File Id="gtk20_properties.mo_90" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tk\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_90" Guid="{6628C611-D422-4CD4-AD6B-C6211A0068BB}">
+                <File Id="gtk20.mo_90" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tk\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="tl" Name="tl">
+            <Directory Id="LC_MESSAGES_93" Name="LC_MESSAGES">
+              <Component Id="glib20.mo_82" Guid="{2FB6A9EB-A365-440C-9E33-1946B03E1F37}">
+                <File Id="glib20.mo_82" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tl\LC_MESSAGES\glib20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="tr" Name="tr">
+            <Directory Id="LC_MESSAGES_94" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_82" Guid="{97D114B4-CFAA-432E-87B0-23861608EAA1}">
+                <File Id="atk10.mo_82" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tr\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_88" Guid="{E65629AD-6556-4131-9440-F641B138FB9C}">
+                <File Id="gdk_pixbuf.mo_88" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tr\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_83" Guid="{4067C3C0-293D-4313-A7A7-49A473118A23}">
+                <File Id="glib20.mo_83" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tr\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_91" Guid="{D6DC9637-59A1-4B2B-B3B3-20B46C03CBA3}">
+                <File Id="gtk20_properties.mo_91" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tr\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_91" Guid="{60519D25-3CA4-4DA0-8078-1E80EABD1E30}">
+                <File Id="gtk20.mo_91" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tr\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="tt" Name="tt">
+            <Directory Id="LC_MESSAGES_95" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_83" Guid="{5D65788C-47E4-4D08-8D08-2D9E4A857F7D}">
+                <File Id="atk10.mo_83" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tt\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_89" Guid="{A9804E71-BC8C-4596-A4C2-584FB0926622}">
+                <File Id="gdk_pixbuf.mo_89" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tt\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_84" Guid="{6FA74E2E-4F56-4288-8F72-377ADC85E514}">
+                <File Id="glib20.mo_84" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tt\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_92" Guid="{C3EEBADD-A235-4DFE-A1AB-943C45653236}">
+                <File Id="gtk20_properties.mo_92" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tt\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_92" Guid="{7951902F-829D-481E-A289-91BDEB792BB6}">
+                <File Id="gtk20.mo_92" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\tt\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ug" Name="ug">
+            <Directory Id="LC_MESSAGES_96" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_84" Guid="{47DD53A5-AC8E-4F73-986A-A7BF4CEDE8D2}">
+                <File Id="atk10.mo_84" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ug\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_90" Guid="{1A94BB2A-D157-4AD3-B3FA-FF5B93E20C7A}">
+                <File Id="gdk_pixbuf.mo_90" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ug\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_85" Guid="{696A8F43-CE1F-4A85-B73F-D7A4503CF10A}">
+                <File Id="glib20.mo_85" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ug\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_93" Guid="{5D5E60C8-937F-435B-84FD-8A4903EFD60B}">
+                <File Id="gtk20_properties.mo_93" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ug\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_93" Guid="{40D3D6F0-2CF2-4E60-8AC0-3E43C95A928D}">
+                <File Id="gtk20.mo_93" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ug\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="uk" Name="uk">
+            <Directory Id="LC_MESSAGES_97" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_85" Guid="{F3CA7B30-49A4-4EC6-B99F-B2BC354F5388}">
+                <File Id="atk10.mo_85" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uk\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_91" Guid="{72B82B4D-7D9B-4AEF-870D-1143B3B5A7F9}">
+                <File Id="gdk_pixbuf.mo_91" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uk\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_86" Guid="{4B7A6E7D-523B-4243-8DD3-266D8F4CEE69}">
+                <File Id="glib20.mo_86" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uk\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_94" Guid="{26F7ED1D-3F54-4B71-A174-28B95DCB88C0}">
+                <File Id="gtk20_properties.mo_94" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uk\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_94" Guid="{B7AC3195-140A-46F1-A180-6318E45D83DF}">
+                <File Id="gtk20.mo_94" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uk\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="ur" Name="ur">
+            <Directory Id="LC_MESSAGES_98" Name="LC_MESSAGES">
+              <Component Id="gtk20_properties.mo_95" Guid="{20083D07-AD70-4308-ADD6-1DD1F6BB703A}">
+                <File Id="gtk20_properties.mo_95" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ur\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_95" Guid="{91C76B73-026B-410E-BA3A-FA2D28FE7879}">
+                <File Id="gtk20.mo_95" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\ur\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="uz" Name="uz">
+            <Directory Id="LC_MESSAGES_99" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_92" Guid="{F565166F-D4B1-4B77-82BB-D49B4C248204}">
+                <File Id="gdk_pixbuf.mo_92" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uz\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_96" Guid="{BCA3DEDD-4529-42AF-83FF-16A21BCF82BE}">
+                <File Id="gtk20_properties.mo_96" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uz\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_96" Guid="{C54DC7D7-05BD-4E96-BF93-E186D229FA9B}">
+                <File Id="gtk20.mo_96" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uz\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="uz_cyrillic" Name="uz@cyrillic">
+            <Directory Id="LC_MESSAGES_100" Name="LC_MESSAGES">
+              <Component Id="gdk_pixbuf.mo_93" Guid="{7505EF83-B5B2-4E80-9868-579923E02795}">
+                <File Id="gdk_pixbuf.mo_93" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uz@cyrillic\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_97" Guid="{5E90C4E1-1CD0-4FE4-B74A-CDCFD5E843FD}">
+                <File Id="gtk20_properties.mo_97" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uz@cyrillic\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_97" Guid="{CF668F18-38ED-4F31-988E-B951FD9D62FE}">
+                <File Id="gtk20.mo_97" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\uz@cyrillic\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="vi" Name="vi">
+            <Directory Id="LC_MESSAGES_101" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_86" Guid="{A4828B9D-6AB7-4950-9705-6434501E9EE7}">
+                <File Id="atk10.mo_86" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\vi\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_94" Guid="{E4D91AF9-9053-4108-9A2F-85E8FC3580ED}">
+                <File Id="gdk_pixbuf.mo_94" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\vi\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_87" Guid="{E769F54F-B744-4F01-8E71-CAEE53480FAF}">
+                <File Id="glib20.mo_87" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\vi\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_98" Guid="{7F71E948-B8CF-4970-BFD6-F13FBB83E99B}">
+                <File Id="gtk20_properties.mo_98" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\vi\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_98" Guid="{3A7F593C-CEE1-45DA-8A27-3694F3C92F5F}">
+                <File Id="gtk20.mo_98" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\vi\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="wa" Name="wa">
+            <Directory Id="LC_MESSAGES_102" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_87" Guid="{E8EE810F-BC70-4779-AC4A-E0E53346C1E0}">
+                <File Id="atk10.mo_87" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\wa\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_95" Guid="{376673D0-1615-4BBA-A4CE-A6F10D8F619F}">
+                <File Id="gdk_pixbuf.mo_95" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\wa\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_88" Guid="{5A5614CE-4420-4E30-8916-29E45CA3C5C0}">
+                <File Id="glib20.mo_88" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\wa\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_99" Guid="{CA874DE5-64E3-4B6D-93CC-EAB59A54A644}">
+                <File Id="gtk20_properties.mo_99" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\wa\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_99" Guid="{0842E64D-D272-4363-A56D-23B9C488C101}">
+                <File Id="gtk20.mo_99" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\wa\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="xh" Name="xh">
+            <Directory Id="LC_MESSAGES_103" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_88" Guid="{42F57069-0FF1-447E-8522-8C3FCE1CC9E0}">
+                <File Id="atk10.mo_88" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\xh\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_96" Guid="{34DA43C9-2225-4F5E-B5F5-5431DEDD5D36}">
+                <File Id="gdk_pixbuf.mo_96" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\xh\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_89" Guid="{18BE9784-9F04-4894-A455-99AD24A115F0}">
+                <File Id="glib20.mo_89" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\xh\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_100" Guid="{CFE70940-8413-463C-A23A-2D056513BE9A}">
+                <File Id="gtk20_properties.mo_100" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\xh\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_100" Guid="{8BB33E10-0F2D-466E-9FD3-08C4C4B49125}">
+                <File Id="gtk20.mo_100" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\xh\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="yi" Name="yi">
+            <Directory Id="LC_MESSAGES_104" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_89" Guid="{8619CC66-3932-40F1-9055-012EBD59B365}">
+                <File Id="atk10.mo_89" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\yi\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_97" Guid="{0F5D46F5-FC9E-44B8-8E80-1D4CBDFE852C}">
+                <File Id="gdk_pixbuf.mo_97" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\yi\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_90" Guid="{451CAA51-44BF-4723-88AC-93409372267C}">
+                <File Id="glib20.mo_90" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\yi\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_101" Guid="{838240F9-5811-4F97-808B-D8169E6002AB}">
+                <File Id="gtk20_properties.mo_101" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\yi\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_101" Guid="{226BE33C-5D4F-4723-AF83-A6CA420A5DEA}">
+                <File Id="gtk20.mo_101" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\yi\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="zh_CN" Name="zh_CN">
+            <Directory Id="LC_MESSAGES_105" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_90" Guid="{60543989-BAD5-4F43-BAD9-C332BDC9F864}">
+                <File Id="atk10.mo_90" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_CN\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_98" Guid="{EAA43AC9-C96E-4A68-B805-1F8F7CF1E37A}">
+                <File Id="gdk_pixbuf.mo_98" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_CN\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_91" Guid="{0D7356B9-A86F-4DF1-A33F-237919A7BA57}">
+                <File Id="glib20.mo_91" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_CN\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_102" Guid="{A7A02B29-FE81-45AB-8AF0-88544B6BB130}">
+                <File Id="gtk20_properties.mo_102" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_CN\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_102" Guid="{BC932881-44A1-47B4-BEB6-E28E9A7399D7}">
+                <File Id="gtk20.mo_102" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_CN\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="zh_HK" Name="zh_HK">
+            <Directory Id="LC_MESSAGES_106" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_91" Guid="{1D93605B-B681-43F1-8B95-4028040C7FCF}">
+                <File Id="atk10.mo_91" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_HK\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_99" Guid="{E4131687-3DEE-4C05-A2AE-343EEA616EA4}">
+                <File Id="gdk_pixbuf.mo_99" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_HK\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_92" Guid="{995511DD-6023-4430-98B0-E11A21EEA096}">
+                <File Id="glib20.mo_92" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_HK\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_103" Guid="{716CC1C3-3D05-4C6A-B5E1-DDD70E4FE696}">
+                <File Id="gtk20_properties.mo_103" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_HK\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_103" Guid="{AA43CD00-42C6-443D-A0B4-0124E1E50840}">
+                <File Id="gtk20.mo_103" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_HK\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="zh_TW" Name="zh_TW">
+            <Directory Id="LC_MESSAGES_107" Name="LC_MESSAGES">
+              <Component Id="atk10.mo_92" Guid="{36812FF3-B90E-414C-9C9E-8D70DB2DF531}">
+                <File Id="atk10.mo_92" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_TW\LC_MESSAGES\atk10.mo" />
+              </Component>
+              <Component Id="gdk_pixbuf.mo_100" Guid="{C276B7E2-A983-4E92-BC71-10FF0B8D8A18}">
+                <File Id="gdk_pixbuf.mo_100" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_TW\LC_MESSAGES\gdk-pixbuf.mo" />
+              </Component>
+              <Component Id="glib20.mo_93" Guid="{58846B44-2398-4540-B7A3-4168EC3A96F8}">
+                <File Id="glib20.mo_93" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_TW\LC_MESSAGES\glib20.mo" />
+              </Component>
+              <Component Id="gtk20_properties.mo_104" Guid="{372D3FD5-5482-44F0-9DB8-69C429A29C61}">
+                <File Id="gtk20_properties.mo_104" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_TW\LC_MESSAGES\gtk20-properties.mo" />
+              </Component>
+              <Component Id="gtk20.mo_104" Guid="{1C18B27C-5F77-4D58-B845-03D7B8D6EC24}">
+                <File Id="gtk20.mo_104" KeyPath="yes" Source="$(var.GtkLibDir)\share\locale\zh_TW\LC_MESSAGES\gtk20.mo" />
+              </Component>
+            </Directory>
+          </Directory>
+        </Directory>
+        <Directory Id="themes" Name="themes">
+          <Directory Id="Default" Name="Default">
+            <Directory Id="gtk_2.0_key" Name="gtk-2.0-key">
+              <Component Id="gtkrc" Guid="{26180EB7-D396-4539-929F-36359A9CCA1C}">
+                <File Id="gtkrc" KeyPath="yes" Source="$(var.GtkLibDir)\share\themes\Default\gtk-2.0-key\gtkrc" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="Emacs" Name="Emacs">
+            <Directory Id="gtk_2.0_key_1" Name="gtk-2.0-key">
+              <Component Id="gtkrc_1" Guid="{754879EA-8623-4F62-83B2-666A19D9BE38}">
+                <File Id="gtkrc_1" KeyPath="yes" Source="$(var.GtkLibDir)\share\themes\Emacs\gtk-2.0-key\gtkrc" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="MS_Windows" Name="MS-Windows">
+            <Directory Id="gtk_2.0_2" Name="gtk-2.0">
+              <Component Id="gtkrc_2" Guid="{F2DAC301-3A19-491B-BA95-097DFC765C29}">
+                <File Id="gtkrc_2" KeyPath="yes" Source="$(var.GtkLibDir)\share\themes\MS-Windows\gtk-2.0\gtkrc" />
+              </Component>
+            </Directory>
+          </Directory>
+          <Directory Id="Raleigh" Name="Raleigh">
+            <Directory Id="gtk_2.0_3" Name="gtk-2.0">
+              <Component Id="gtkrc_3" Guid="{49657B98-52FA-4984-8DA3-DE84A33A0523}">
+                <File Id="gtkrc_3" KeyPath="yes" Source="$(var.GtkLibDir)\share\themes\Raleigh\gtk-2.0\gtkrc" />
+              </Component>
+            </Directory>
+          </Directory>
+        </Directory>
+      </Directory>
+    </DirectoryRef>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="GtkLibs">
+      <ComponentRef Id="freeglut.dll" />
+      <ComponentRef Id="freetype6.dll" />
+      <ComponentRef Id="gdk_pixbuf_query_loaders.exe" />
+      <ComponentRef Id="gspawn_win32_helper_console.exe" />
+      <ComponentRef Id="gspawn_win32_helper.exe" />
+      <ComponentRef Id="gtk_query_immodules_2.0.exe" />
+      <ComponentRef Id="intl.dll" />
+      <ComponentRef Id="libatk_1.0_0.dll" />
+      <ComponentRef Id="libcairo_2.dll" />
+      <ComponentRef Id="libcairo_gobject_2.dll" />
+      <ComponentRef Id="libcairo_script_interpreter_2.dll" />
+      <ComponentRef Id="libexpat_1.dll" />
+      <ComponentRef Id="libfontconfig_1.dll" />
+      <ComponentRef Id="libgailutil_18.dll" />
+      <ComponentRef Id="libgcc_s_dw2_1.dll" />
+      <ComponentRef Id="libgdk_win32_2.0_0.dll" />
+      <ComponentRef Id="libgdkglext_win32_1.0_0.dll" />
+      <ComponentRef Id="libgdk_pixbuf_2.0_0.dll" />
+      <ComponentRef Id="libgio_2.0_0.dll" />
+      <ComponentRef Id="libglib_2.0_0.dll" />
+      <ComponentRef Id="libgmodule_2.0_0.dll" />
+      <ComponentRef Id="libgobject_2.0_0.dll" />
+      <ComponentRef Id="libgthread_2.0_0.dll" />
+      <ComponentRef Id="libgtk_win32_2.0_0.dll" />
+      <ComponentRef Id="libgtkglext_win32_1.0_0.dll" />
+      <ComponentRef Id="libpango_1.0_0.dll" />
+      <ComponentRef Id="libpangocairo_1.0_0.dll" />
+      <ComponentRef Id="libpangoft2_1.0_0.dll" />
+      <ComponentRef Id="libpangowin32_1.0_0.dll" />
+      <ComponentRef Id="libpng14_14.dll" />
+      <ComponentRef Id="libstdc___6.dll" />
+      <ComponentRef Id="libzip.dll" />
+      <ComponentRef Id="pango_querymodules.exe" />
+      <ComponentRef Id="tbb.dll" />
+      <ComponentRef Id="zlib1.dll" />
+      <ComponentRef Id="fonts.conf" />
+      <ComponentRef Id="gtk.immodules" />
+      <ComponentRef Id="im_multipress.conf" />
+      <ComponentRef Id="pango.modules" />
+      <ComponentRef Id="loaders.cache" />
+      <ComponentRef Id="libpixmap.dll" />
+      <ComponentRef Id="libwimp.dll" />
+      <ComponentRef Id="libgail.dll" />
+      <ComponentRef Id="atk_1.32.0_2_win32.mft" />
+      <ComponentRef Id="cairo_1.10.2_2_win32.mft" />
+      <ComponentRef Id="expat_2.0.1_1_win32.mft" />
+      <ComponentRef Id="fontconfig_2.8.0_2_win32.mft" />
+      <ComponentRef Id="freetype_2.4.2_1_win32.mft" />
+      <ComponentRef Id="gdk_pixbuf_2.24.0_1_win32.mft" />
+      <ComponentRef Id="gettext_runtime_0.18.1.1_2_win32.mft" />
+      <ComponentRef Id="glib_2.28.8_1_win32.mft" />
+      <ComponentRef Id="gtk__2.24.10_1_win32.mft" />
+      <ComponentRef Id="libpng_1.4.3_1_win32.mft" />
+      <ComponentRef Id="pango_1.29.4_1_win32.mft" />
+      <ComponentRef Id="zlib_1.2.5_2_win32.mft" />
+      <ComponentRef Id="COPYING" />
+      <ComponentRef Id="COPYING_LGPL_2.1" />
+      <ComponentRef Id="COPYING_MPL_1.1" />
+      <ComponentRef Id="COPYING_1" />
+      <ComponentRef Id="COPYING_2" />
+      <ComponentRef Id="COPYING_3" />
+      <ComponentRef Id="locale.alias" />
+      <ComponentRef Id="atk10.mo" />
+      <ComponentRef Id="gdk_pixbuf.mo" />
+      <ComponentRef Id="glib20.mo" />
+      <ComponentRef Id="gtk20_properties.mo" />
+      <ComponentRef Id="gtk20.mo" />
+      <ComponentRef Id="atk10.mo_1" />
+      <ComponentRef Id="glib20.mo_1" />
+      <ComponentRef Id="gtk20_properties.mo_1" />
+      <ComponentRef Id="gtk20.mo_1" />
+      <ComponentRef Id="gdk_pixbuf.mo_1" />
+      <ComponentRef Id="gtk20_properties.mo_2" />
+      <ComponentRef Id="gtk20.mo_2" />
+      <ComponentRef Id="atk10.mo_2" />
+      <ComponentRef Id="gdk_pixbuf.mo_2" />
+      <ComponentRef Id="glib20.mo_2" />
+      <ComponentRef Id="gtk20_properties.mo_3" />
+      <ComponentRef Id="gtk20.mo_3" />
+      <ComponentRef Id="atk10.mo_3" />
+      <ComponentRef Id="gdk_pixbuf.mo_3" />
+      <ComponentRef Id="glib20.mo_3" />
+      <ComponentRef Id="gtk20_properties.mo_4" />
+      <ComponentRef Id="gtk20.mo_4" />
+      <ComponentRef Id="atk10.mo_4" />
+      <ComponentRef Id="gdk_pixbuf.mo_4" />
+      <ComponentRef Id="glib20.mo_4" />
+      <ComponentRef Id="gtk20_properties.mo_5" />
+      <ComponentRef Id="gtk20.mo_5" />
+      <ComponentRef Id="atk10.mo_5" />
+      <ComponentRef Id="gdk_pixbuf.mo_5" />
+      <ComponentRef Id="glib20.mo_5" />
+      <ComponentRef Id="gtk20_properties.mo_6" />
+      <ComponentRef Id="gtk20.mo_6" />
+      <ComponentRef Id="gtk20_properties.mo_7" />
+      <ComponentRef Id="gtk20.mo_7" />
+      <ComponentRef Id="atk10.mo_6" />
+      <ComponentRef Id="gdk_pixbuf.mo_6" />
+      <ComponentRef Id="glib20.mo_6" />
+      <ComponentRef Id="gtk20_properties.mo_8" />
+      <ComponentRef Id="gtk20.mo_8" />
+      <ComponentRef Id="atk10.mo_7" />
+      <ComponentRef Id="gdk_pixbuf.mo_7" />
+      <ComponentRef Id="glib20.mo_7" />
+      <ComponentRef Id="gtk20_properties.mo_9" />
+      <ComponentRef Id="gtk20.mo_9" />
+      <ComponentRef Id="atk10.mo_8" />
+      <ComponentRef Id="gdk_pixbuf.mo_8" />
+      <ComponentRef Id="glib20.mo_8" />
+      <ComponentRef Id="gtk20_properties.mo_10" />
+      <ComponentRef Id="gtk20.mo_10" />
+      <ComponentRef Id="atk10.mo_9" />
+      <ComponentRef Id="gdk_pixbuf.mo_9" />
+      <ComponentRef Id="glib20.mo_9" />
+      <ComponentRef Id="gtk20_properties.mo_11" />
+      <ComponentRef Id="gtk20.mo_11" />
+      <ComponentRef Id="atk10.mo_10" />
+      <ComponentRef Id="gdk_pixbuf.mo_10" />
+      <ComponentRef Id="glib20.mo_10" />
+      <ComponentRef Id="gtk20_properties.mo_12" />
+      <ComponentRef Id="gtk20.mo_12" />
+      <ComponentRef Id="gdk_pixbuf.mo_11" />
+      <ComponentRef Id="gtk20_properties.mo_13" />
+      <ComponentRef Id="gtk20.mo_13" />
+      <ComponentRef Id="atk10.mo_11" />
+      <ComponentRef Id="gdk_pixbuf.mo_12" />
+      <ComponentRef Id="glib20.mo_11" />
+      <ComponentRef Id="gtk20_properties.mo_14" />
+      <ComponentRef Id="gtk20.mo_14" />
+      <ComponentRef Id="atk10.mo_12" />
+      <ComponentRef Id="gdk_pixbuf.mo_13" />
+      <ComponentRef Id="glib20.mo_12" />
+      <ComponentRef Id="gtk20_properties.mo_15" />
+      <ComponentRef Id="gtk20.mo_15" />
+      <ComponentRef Id="atk10.mo_13" />
+      <ComponentRef Id="gdk_pixbuf.mo_14" />
+      <ComponentRef Id="glib20.mo_13" />
+      <ComponentRef Id="gtk20_properties.mo_16" />
+      <ComponentRef Id="gtk20.mo_16" />
+      <ComponentRef Id="gdk_pixbuf.mo_15" />
+      <ComponentRef Id="gtk20_properties.mo_17" />
+      <ComponentRef Id="gtk20.mo_17" />
+      <ComponentRef Id="atk10.mo_14" />
+      <ComponentRef Id="gdk_pixbuf.mo_16" />
+      <ComponentRef Id="glib20.mo_14" />
+      <ComponentRef Id="gtk20_properties.mo_18" />
+      <ComponentRef Id="gtk20.mo_18" />
+      <ComponentRef Id="atk10.mo_15" />
+      <ComponentRef Id="gdk_pixbuf.mo_17" />
+      <ComponentRef Id="glib20.mo_15" />
+      <ComponentRef Id="gtk20_properties.mo_19" />
+      <ComponentRef Id="gtk20.mo_19" />
+      <ComponentRef Id="atk10.mo_16" />
+      <ComponentRef Id="gdk_pixbuf.mo_18" />
+      <ComponentRef Id="glib20.mo_16" />
+      <ComponentRef Id="gtk20_properties.mo_20" />
+      <ComponentRef Id="gtk20.mo_20" />
+      <ComponentRef Id="atk10.mo_17" />
+      <ComponentRef Id="gdk_pixbuf.mo_19" />
+      <ComponentRef Id="glib20.mo_17" />
+      <ComponentRef Id="gtk20_properties.mo_21" />
+      <ComponentRef Id="gtk20.mo_21" />
+      <ComponentRef Id="atk10.mo_18" />
+      <ComponentRef Id="gdk_pixbuf.mo_20" />
+      <ComponentRef Id="glib20.mo_18" />
+      <ComponentRef Id="gtk20_properties.mo_22" />
+      <ComponentRef Id="gtk20.mo_22" />
+      <ComponentRef Id="atk10.mo_19" />
+      <ComponentRef Id="gdk_pixbuf.mo_21" />
+      <ComponentRef Id="glib20.mo_19" />
+      <ComponentRef Id="gtk20_properties.mo_23" />
+      <ComponentRef Id="gtk20.mo_23" />
+      <ComponentRef Id="atk10.mo_20" />
+      <ComponentRef Id="gdk_pixbuf.mo_22" />
+      <ComponentRef Id="glib20.mo_20" />
+      <ComponentRef Id="atk10.mo_21" />
+      <ComponentRef Id="gdk_pixbuf.mo_23" />
+      <ComponentRef Id="glib20.mo_21" />
+      <ComponentRef Id="gtk20_properties.mo_24" />
+      <ComponentRef Id="gtk20.mo_24" />
+      <ComponentRef Id="atk10.mo_22" />
+      <ComponentRef Id="gdk_pixbuf.mo_24" />
+      <ComponentRef Id="glib20.mo_22" />
+      <ComponentRef Id="gtk20_properties.mo_25" />
+      <ComponentRef Id="gtk20.mo_25" />
+      <ComponentRef Id="atk10.mo_23" />
+      <ComponentRef Id="gdk_pixbuf.mo_25" />
+      <ComponentRef Id="glib20.mo_23" />
+      <ComponentRef Id="gtk20_properties.mo_26" />
+      <ComponentRef Id="gtk20.mo_26" />
+      <ComponentRef Id="atk10.mo_24" />
+      <ComponentRef Id="gdk_pixbuf.mo_26" />
+      <ComponentRef Id="glib20.mo_24" />
+      <ComponentRef Id="gtk20_properties.mo_27" />
+      <ComponentRef Id="gtk20.mo_27" />
+      <ComponentRef Id="atk10.mo_25" />
+      <ComponentRef Id="gdk_pixbuf.mo_27" />
+      <ComponentRef Id="glib20.mo_25" />
+      <ComponentRef Id="gtk20_properties.mo_28" />
+      <ComponentRef Id="gtk20.mo_28" />
+      <ComponentRef Id="atk10.mo_26" />
+      <ComponentRef Id="gdk_pixbuf.mo_28" />
+      <ComponentRef Id="glib20.mo_26" />
+      <ComponentRef Id="gtk20_properties.mo_29" />
+      <ComponentRef Id="gtk20.mo_29" />
+      <ComponentRef Id="atk10.mo_27" />
+      <ComponentRef Id="gdk_pixbuf.mo_29" />
+      <ComponentRef Id="glib20.mo_27" />
+      <ComponentRef Id="gtk20_properties.mo_30" />
+      <ComponentRef Id="gtk20.mo_30" />
+      <ComponentRef Id="atk10.mo_28" />
+      <ComponentRef Id="gdk_pixbuf.mo_30" />
+      <ComponentRef Id="glib20.mo_28" />
+      <ComponentRef Id="gtk20_properties.mo_31" />
+      <ComponentRef Id="gtk20.mo_31" />
+      <ComponentRef Id="atk10.mo_29" />
+      <ComponentRef Id="gdk_pixbuf.mo_31" />
+      <ComponentRef Id="glib20.mo_29" />
+      <ComponentRef Id="gtk20_properties.mo_32" />
+      <ComponentRef Id="gtk20.mo_32" />
+      <ComponentRef Id="atk10.mo_30" />
+      <ComponentRef Id="gdk_pixbuf.mo_32" />
+      <ComponentRef Id="glib20.mo_30" />
+      <ComponentRef Id="gtk20_properties.mo_33" />
+      <ComponentRef Id="gtk20.mo_33" />
+      <ComponentRef Id="atk10.mo_31" />
+      <ComponentRef Id="gdk_pixbuf.mo_33" />
+      <ComponentRef Id="glib20.mo_31" />
+      <ComponentRef Id="gtk20_properties.mo_34" />
+      <ComponentRef Id="gtk20.mo_34" />
+      <ComponentRef Id="atk10.mo_32" />
+      <ComponentRef Id="gdk_pixbuf.mo_34" />
+      <ComponentRef Id="glib20.mo_32" />
+      <ComponentRef Id="gtk20_properties.mo_35" />
+      <ComponentRef Id="gtk20.mo_35" />
+      <ComponentRef Id="atk10.mo_33" />
+      <ComponentRef Id="gdk_pixbuf.mo_35" />
+      <ComponentRef Id="glib20.mo_33" />
+      <ComponentRef Id="gtk20_properties.mo_36" />
+      <ComponentRef Id="gtk20.mo_36" />
+      <ComponentRef Id="atk10.mo_34" />
+      <ComponentRef Id="gdk_pixbuf.mo_36" />
+      <ComponentRef Id="glib20.mo_34" />
+      <ComponentRef Id="gtk20_properties.mo_37" />
+      <ComponentRef Id="gtk20.mo_37" />
+      <ComponentRef Id="atk10.mo_35" />
+      <ComponentRef Id="gdk_pixbuf.mo_37" />
+      <ComponentRef Id="glib20.mo_35" />
+      <ComponentRef Id="gtk20_properties.mo_38" />
+      <ComponentRef Id="gtk20.mo_38" />
+      <ComponentRef Id="atk10.mo_36" />
+      <ComponentRef Id="gdk_pixbuf.mo_38" />
+      <ComponentRef Id="glib20.mo_36" />
+      <ComponentRef Id="gtk20_properties.mo_39" />
+      <ComponentRef Id="gtk20.mo_39" />
+      <ComponentRef Id="atk10.mo_37" />
+      <ComponentRef Id="gdk_pixbuf.mo_39" />
+      <ComponentRef Id="glib20.mo_37" />
+      <ComponentRef Id="gtk20_properties.mo_40" />
+      <ComponentRef Id="gtk20.mo_40" />
+      <ComponentRef Id="gdk_pixbuf.mo_40" />
+      <ComponentRef Id="gtk20_properties.mo_41" />
+      <ComponentRef Id="gtk20.mo_41" />
+      <ComponentRef Id="atk10.mo_38" />
+      <ComponentRef Id="gdk_pixbuf.mo_41" />
+      <ComponentRef Id="glib20.mo_38" />
+      <ComponentRef Id="gtk20_properties.mo_42" />
+      <ComponentRef Id="gtk20.mo_42" />
+      <ComponentRef Id="gdk_pixbuf.mo_42" />
+      <ComponentRef Id="gtk20_properties.mo_43" />
+      <ComponentRef Id="gtk20.mo_43" />
+      <ComponentRef Id="atk10.mo_39" />
+      <ComponentRef Id="gdk_pixbuf.mo_43" />
+      <ComponentRef Id="glib20.mo_39" />
+      <ComponentRef Id="gtk20_properties.mo_44" />
+      <ComponentRef Id="gtk20.mo_44" />
+      <ComponentRef Id="atk10.mo_40" />
+      <ComponentRef Id="gdk_pixbuf.mo_44" />
+      <ComponentRef Id="glib20.mo_40" />
+      <ComponentRef Id="gtk20_properties.mo_45" />
+      <ComponentRef Id="gtk20.mo_45" />
+      <ComponentRef Id="atk10.mo_41" />
+      <ComponentRef Id="gdk_pixbuf.mo_45" />
+      <ComponentRef Id="glib20.mo_41" />
+      <ComponentRef Id="gtk20_properties.mo_46" />
+      <ComponentRef Id="gtk20.mo_46" />
+      <ComponentRef Id="atk10.mo_42" />
+      <ComponentRef Id="gdk_pixbuf.mo_46" />
+      <ComponentRef Id="glib20.mo_42" />
+      <ComponentRef Id="gtk20_properties.mo_47" />
+      <ComponentRef Id="gtk20.mo_47" />
+      <ComponentRef Id="atk10.mo_43" />
+      <ComponentRef Id="glib20.mo_43" />
+      <ComponentRef Id="gtk20_properties.mo_48" />
+      <ComponentRef Id="gtk20.mo_48" />
+      <ComponentRef Id="atk10.mo_44" />
+      <ComponentRef Id="gdk_pixbuf.mo_47" />
+      <ComponentRef Id="glib20.mo_44" />
+      <ComponentRef Id="gtk20_properties.mo_49" />
+      <ComponentRef Id="gtk20.mo_49" />
+      <ComponentRef Id="atk10.mo_45" />
+      <ComponentRef Id="gdk_pixbuf.mo_48" />
+      <ComponentRef Id="glib20.mo_45" />
+      <ComponentRef Id="gtk20_properties.mo_50" />
+      <ComponentRef Id="gtk20.mo_50" />
+      <ComponentRef Id="atk10.mo_46" />
+      <ComponentRef Id="gdk_pixbuf.mo_49" />
+      <ComponentRef Id="glib20.mo_46" />
+      <ComponentRef Id="gtk20_properties.mo_51" />
+      <ComponentRef Id="gtk20.mo_51" />
+      <ComponentRef Id="atk10.mo_47" />
+      <ComponentRef Id="gdk_pixbuf.mo_50" />
+      <ComponentRef Id="gtk20_properties.mo_52" />
+      <ComponentRef Id="gtk20.mo_52" />
+      <ComponentRef Id="atk10.mo_48" />
+      <ComponentRef Id="gdk_pixbuf.mo_51" />
+      <ComponentRef Id="glib20.mo_47" />
+      <ComponentRef Id="gtk20_properties.mo_53" />
+      <ComponentRef Id="gtk20.mo_53" />
+      <ComponentRef Id="atk10.mo_49" />
+      <ComponentRef Id="gdk_pixbuf.mo_52" />
+      <ComponentRef Id="glib20.mo_48" />
+      <ComponentRef Id="gtk20_properties.mo_54" />
+      <ComponentRef Id="gtk20.mo_54" />
+      <ComponentRef Id="atk10.mo_50" />
+      <ComponentRef Id="gdk_pixbuf.mo_53" />
+      <ComponentRef Id="glib20.mo_49" />
+      <ComponentRef Id="gtk20_properties.mo_55" />
+      <ComponentRef Id="gtk20.mo_55" />
+      <ComponentRef Id="glib20.mo_50" />
+      <ComponentRef Id="gdk_pixbuf.mo_54" />
+      <ComponentRef Id="gtk20_properties.mo_56" />
+      <ComponentRef Id="gtk20.mo_56" />
+      <ComponentRef Id="atk10.mo_51" />
+      <ComponentRef Id="gdk_pixbuf.mo_55" />
+      <ComponentRef Id="glib20.mo_51" />
+      <ComponentRef Id="gtk20_properties.mo_57" />
+      <ComponentRef Id="gtk20.mo_57" />
+      <ComponentRef Id="atk10.mo_52" />
+      <ComponentRef Id="gdk_pixbuf.mo_56" />
+      <ComponentRef Id="glib20.mo_52" />
+      <ComponentRef Id="gtk20_properties.mo_58" />
+      <ComponentRef Id="gtk20.mo_58" />
+      <ComponentRef Id="atk10.mo_53" />
+      <ComponentRef Id="gdk_pixbuf.mo_57" />
+      <ComponentRef Id="glib20.mo_53" />
+      <ComponentRef Id="gtk20_properties.mo_59" />
+      <ComponentRef Id="gtk20.mo_59" />
+      <ComponentRef Id="atk10.mo_54" />
+      <ComponentRef Id="gdk_pixbuf.mo_58" />
+      <ComponentRef Id="glib20.mo_54" />
+      <ComponentRef Id="gtk20_properties.mo_60" />
+      <ComponentRef Id="gtk20.mo_60" />
+      <ComponentRef Id="atk10.mo_55" />
+      <ComponentRef Id="gdk_pixbuf.mo_59" />
+      <ComponentRef Id="glib20.mo_55" />
+      <ComponentRef Id="gtk20_properties.mo_61" />
+      <ComponentRef Id="gtk20.mo_61" />
+      <ComponentRef Id="gdk_pixbuf.mo_60" />
+      <ComponentRef Id="gtk20_properties.mo_62" />
+      <ComponentRef Id="gtk20.mo_62" />
+      <ComponentRef Id="atk10.mo_56" />
+      <ComponentRef Id="gdk_pixbuf.mo_61" />
+      <ComponentRef Id="glib20.mo_56" />
+      <ComponentRef Id="gtk20_properties.mo_63" />
+      <ComponentRef Id="gtk20.mo_63" />
+      <ComponentRef Id="gdk_pixbuf.mo_62" />
+      <ComponentRef Id="glib20.mo_57" />
+      <ComponentRef Id="gtk20_properties.mo_64" />
+      <ComponentRef Id="gtk20.mo_64" />
+      <ComponentRef Id="atk10.mo_57" />
+      <ComponentRef Id="gdk_pixbuf.mo_63" />
+      <ComponentRef Id="glib20.mo_58" />
+      <ComponentRef Id="gtk20_properties.mo_65" />
+      <ComponentRef Id="gtk20.mo_65" />
+      <ComponentRef Id="atk10.mo_58" />
+      <ComponentRef Id="gdk_pixbuf.mo_64" />
+      <ComponentRef Id="glib20.mo_59" />
+      <ComponentRef Id="gtk20_properties.mo_66" />
+      <ComponentRef Id="gtk20.mo_66" />
+      <ComponentRef Id="atk10.mo_59" />
+      <ComponentRef Id="gdk_pixbuf.mo_65" />
+      <ComponentRef Id="glib20.mo_60" />
+      <ComponentRef Id="gtk20_properties.mo_67" />
+      <ComponentRef Id="gtk20.mo_67" />
+      <ComponentRef Id="gdk_pixbuf.mo_66" />
+      <ComponentRef Id="gtk20_properties.mo_68" />
+      <ComponentRef Id="gtk20.mo_68" />
+      <ComponentRef Id="atk10.mo_60" />
+      <ComponentRef Id="gdk_pixbuf.mo_67" />
+      <ComponentRef Id="glib20.mo_61" />
+      <ComponentRef Id="gtk20_properties.mo_69" />
+      <ComponentRef Id="gtk20.mo_69" />
+      <ComponentRef Id="atk10.mo_61" />
+      <ComponentRef Id="gdk_pixbuf.mo_68" />
+      <ComponentRef Id="glib20.mo_62" />
+      <ComponentRef Id="gtk20_properties.mo_70" />
+      <ComponentRef Id="gtk20.mo_70" />
+      <ComponentRef Id="atk10.mo_62" />
+      <ComponentRef Id="gdk_pixbuf.mo_69" />
+      <ComponentRef Id="glib20.mo_63" />
+      <ComponentRef Id="gtk20_properties.mo_71" />
+      <ComponentRef Id="gtk20.mo_71" />
+      <ComponentRef Id="atk10.mo_63" />
+      <ComponentRef Id="gdk_pixbuf.mo_70" />
+      <ComponentRef Id="glib20.mo_64" />
+      <ComponentRef Id="gtk20_properties.mo_72" />
+      <ComponentRef Id="gtk20.mo_72" />
+      <ComponentRef Id="atk10.mo_64" />
+      <ComponentRef Id="gdk_pixbuf.mo_71" />
+      <ComponentRef Id="glib20.mo_65" />
+      <ComponentRef Id="gtk20_properties.mo_73" />
+      <ComponentRef Id="gtk20.mo_73" />
+      <ComponentRef Id="atk10.mo_65" />
+      <ComponentRef Id="gdk_pixbuf.mo_72" />
+      <ComponentRef Id="glib20.mo_66" />
+      <ComponentRef Id="gtk20_properties.mo_74" />
+      <ComponentRef Id="gtk20.mo_74" />
+      <ComponentRef Id="atk10.mo_66" />
+      <ComponentRef Id="gdk_pixbuf.mo_73" />
+      <ComponentRef Id="glib20.mo_67" />
+      <ComponentRef Id="gtk20_properties.mo_75" />
+      <ComponentRef Id="gtk20.mo_75" />
+      <ComponentRef Id="atk10.mo_67" />
+      <ComponentRef Id="gdk_pixbuf.mo_74" />
+      <ComponentRef Id="glib20.mo_68" />
+      <ComponentRef Id="gtk20_properties.mo_76" />
+      <ComponentRef Id="gtk20.mo_76" />
+      <ComponentRef Id="atk10.mo_68" />
+      <ComponentRef Id="gdk_pixbuf.mo_75" />
+      <ComponentRef Id="glib20.mo_69" />
+      <ComponentRef Id="gtk20_properties.mo_77" />
+      <ComponentRef Id="gtk20.mo_77" />
+      <ComponentRef Id="atk10.mo_69" />
+      <ComponentRef Id="glib20.mo_70" />
+      <ComponentRef Id="gtk20_properties.mo_78" />
+      <ComponentRef Id="gtk20.mo_78" />
+      <ComponentRef Id="atk10.mo_70" />
+      <ComponentRef Id="gdk_pixbuf.mo_76" />
+      <ComponentRef Id="glib20.mo_71" />
+      <ComponentRef Id="gtk20_properties.mo_79" />
+      <ComponentRef Id="gtk20.mo_79" />
+      <ComponentRef Id="atk10.mo_71" />
+      <ComponentRef Id="gdk_pixbuf.mo_77" />
+      <ComponentRef Id="glib20.mo_72" />
+      <ComponentRef Id="gtk20_properties.mo_80" />
+      <ComponentRef Id="gtk20.mo_80" />
+      <ComponentRef Id="atk10.mo_72" />
+      <ComponentRef Id="gdk_pixbuf.mo_78" />
+      <ComponentRef Id="glib20.mo_73" />
+      <ComponentRef Id="gtk20_properties.mo_81" />
+      <ComponentRef Id="gtk20.mo_81" />
+      <ComponentRef Id="atk10.mo_73" />
+      <ComponentRef Id="gdk_pixbuf.mo_79" />
+      <ComponentRef Id="glib20.mo_74" />
+      <ComponentRef Id="gtk20_properties.mo_82" />
+      <ComponentRef Id="gtk20.mo_82" />
+      <ComponentRef Id="atk10.mo_74" />
+      <ComponentRef Id="gdk_pixbuf.mo_80" />
+      <ComponentRef Id="glib20.mo_75" />
+      <ComponentRef Id="gtk20_properties.mo_83" />
+      <ComponentRef Id="gtk20.mo_83" />
+      <ComponentRef Id="atk10.mo_75" />
+      <ComponentRef Id="gdk_pixbuf.mo_81" />
+      <ComponentRef Id="glib20.mo_76" />
+      <ComponentRef Id="gtk20_properties.mo_84" />
+      <ComponentRef Id="gtk20.mo_84" />
+      <ComponentRef Id="atk10.mo_76" />
+      <ComponentRef Id="gdk_pixbuf.mo_82" />
+      <ComponentRef Id="glib20.mo_77" />
+      <ComponentRef Id="gtk20_properties.mo_85" />
+      <ComponentRef Id="gtk20.mo_85" />
+      <ComponentRef Id="atk10.mo_77" />
+      <ComponentRef Id="gdk_pixbuf.mo_83" />
+      <ComponentRef Id="glib20.mo_78" />
+      <ComponentRef Id="gtk20_properties.mo_86" />
+      <ComponentRef Id="gtk20.mo_86" />
+      <ComponentRef Id="atk10.mo_78" />
+      <ComponentRef Id="gdk_pixbuf.mo_84" />
+      <ComponentRef Id="glib20.mo_79" />
+      <ComponentRef Id="gtk20_properties.mo_87" />
+      <ComponentRef Id="gtk20.mo_87" />
+      <ComponentRef Id="atk10.mo_79" />
+      <ComponentRef Id="gdk_pixbuf.mo_85" />
+      <ComponentRef Id="glib20.mo_80" />
+      <ComponentRef Id="gtk20_properties.mo_88" />
+      <ComponentRef Id="gtk20.mo_88" />
+      <ComponentRef Id="atk10.mo_80" />
+      <ComponentRef Id="gdk_pixbuf.mo_86" />
+      <ComponentRef Id="glib20.mo_81" />
+      <ComponentRef Id="gtk20_properties.mo_89" />
+      <ComponentRef Id="gtk20.mo_89" />
+      <ComponentRef Id="atk10.mo_81" />
+      <ComponentRef Id="gdk_pixbuf.mo_87" />
+      <ComponentRef Id="gtk20_properties.mo_90" />
+      <ComponentRef Id="gtk20.mo_90" />
+      <ComponentRef Id="glib20.mo_82" />
+      <ComponentRef Id="atk10.mo_82" />
+      <ComponentRef Id="gdk_pixbuf.mo_88" />
+      <ComponentRef Id="glib20.mo_83" />
+      <ComponentRef Id="gtk20_properties.mo_91" />
+      <ComponentRef Id="gtk20.mo_91" />
+      <ComponentRef Id="atk10.mo_83" />
+      <ComponentRef Id="gdk_pixbuf.mo_89" />
+      <ComponentRef Id="glib20.mo_84" />
+      <ComponentRef Id="gtk20_properties.mo_92" />
+      <ComponentRef Id="gtk20.mo_92" />
+      <ComponentRef Id="atk10.mo_84" />
+      <ComponentRef Id="gdk_pixbuf.mo_90" />
+      <ComponentRef Id="glib20.mo_85" />
+      <ComponentRef Id="gtk20_properties.mo_93" />
+      <ComponentRef Id="gtk20.mo_93" />
+      <ComponentRef Id="atk10.mo_85" />
+      <ComponentRef Id="gdk_pixbuf.mo_91" />
+      <ComponentRef Id="glib20.mo_86" />
+      <ComponentRef Id="gtk20_properties.mo_94" />
+      <ComponentRef Id="gtk20.mo_94" />
+      <ComponentRef Id="gtk20_properties.mo_95" />
+      <ComponentRef Id="gtk20.mo_95" />
+      <ComponentRef Id="gdk_pixbuf.mo_92" />
+      <ComponentRef Id="gtk20_properties.mo_96" />
+      <ComponentRef Id="gtk20.mo_96" />
+      <ComponentRef Id="gdk_pixbuf.mo_93" />
+      <ComponentRef Id="gtk20_properties.mo_97" />
+      <ComponentRef Id="gtk20.mo_97" />
+      <ComponentRef Id="atk10.mo_86" />
+      <ComponentRef Id="gdk_pixbuf.mo_94" />
+      <ComponentRef Id="glib20.mo_87" />
+      <ComponentRef Id="gtk20_properties.mo_98" />
+      <ComponentRef Id="gtk20.mo_98" />
+      <ComponentRef Id="atk10.mo_87" />
+      <ComponentRef Id="gdk_pixbuf.mo_95" />
+      <ComponentRef Id="glib20.mo_88" />
+      <ComponentRef Id="gtk20_properties.mo_99" />
+      <ComponentRef Id="gtk20.mo_99" />
+      <ComponentRef Id="atk10.mo_88" />
+      <ComponentRef Id="gdk_pixbuf.mo_96" />
+      <ComponentRef Id="glib20.mo_89" />
+      <ComponentRef Id="gtk20_properties.mo_100" />
+      <ComponentRef Id="gtk20.mo_100" />
+      <ComponentRef Id="atk10.mo_89" />
+      <ComponentRef Id="gdk_pixbuf.mo_97" />
+      <ComponentRef Id="glib20.mo_90" />
+      <ComponentRef Id="gtk20_properties.mo_101" />
+      <ComponentRef Id="gtk20.mo_101" />
+      <ComponentRef Id="atk10.mo_90" />
+      <ComponentRef Id="gdk_pixbuf.mo_98" />
+      <ComponentRef Id="glib20.mo_91" />
+      <ComponentRef Id="gtk20_properties.mo_102" />
+      <ComponentRef Id="gtk20.mo_102" />
+      <ComponentRef Id="atk10.mo_91" />
+      <ComponentRef Id="gdk_pixbuf.mo_99" />
+      <ComponentRef Id="glib20.mo_92" />
+      <ComponentRef Id="gtk20_properties.mo_103" />
+      <ComponentRef Id="gtk20.mo_103" />
+      <ComponentRef Id="atk10.mo_92" />
+      <ComponentRef Id="gdk_pixbuf.mo_100" />
+      <ComponentRef Id="glib20.mo_93" />
+      <ComponentRef Id="gtk20_properties.mo_104" />
+      <ComponentRef Id="gtk20.mo_104" />
+      <ComponentRef Id="gtkrc" />
+      <ComponentRef Id="gtkrc_1" />
+      <ComponentRef Id="gtkrc_2" />
+      <ComponentRef Id="gtkrc_3" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

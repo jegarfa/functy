@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-5.000000" y="-5.000000" z="-5.000000"/>
+		</min>
+		<width>
+			<coord x="10.000000" y="10.000000" z="10.000000"/>
+		</width>
+	</range>
+	<controlvar>
+		<varname>pi</varname>
+		<varvalue>3.14159265</varvalue>
+	</controlvar>
+	<controlvar>
+		<varname>f</varname>
+		<varvalue>0.370</varvalue>
+	</controlvar>
+	<controlvar>
+		<varname>g</varname>
+		<varvalue>0.337</varvalue>
+	</controlvar>
+	<function type="cartesian">
+		<name>Cartesian 2</name>
+		<equation>0.5-(0.5*(y+4.5))</equation>
+		<red>1.000</red>
+		<green>1.000</green>
+		<blue>1.000</blue>
+		<alpha>1.000</alpha>
+		<accuracy double="0.020000"/>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<name>Spherical 3</name>
+		<equation>2.5</equation>
+		<red>0.500</red>
+		<green>0.606</green>
+		<blue>1</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>0.000</centre-x>
+		<centre-y>0</centre-y>
+		<centre-z>0.000</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="cartesian">
+		<name>Cartesian 3</name>
+		<equation>(sin(x+y) / 4)-1000+1000*(x&lt;3)*(x&gt;(0-3))*(y&lt;3)*(y&gt;(0-3))</equation>
+		<red>1</red>
+		<green>0.5</green>
+		<blue>0.5</blue>
+		<alpha>(x&lt;3)*(x&gt;(0-3))*(y&lt;3)*(y&gt;(0-3))</alpha>
+		<accuracy double="0.020000"/>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="curve">
+		<name>Curve 3</name>
+		<equation>0.2</equation>
+		<red>0.000</red>
+		<green>1.000</green>
+		<blue>0.065</blue>
+		<alpha>1.000</alpha>
+		<accuracy double="0.002000"/>
+		<accuracy-radius double="0.020000"/>
+		<equation-x>2*sin(5*a*f*pi)</equation-x>
+		<equation-y>0-2*cos(5*a*g*pi)</equation-y>
+		<equation-z>1.5*cos(5*a*g*pi)</equation-z>
+		<centre-x>0.000</centre-x>
+		<centre-y>0</centre-y>
+		<centre-z>0.000</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

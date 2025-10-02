@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-10.371368" y="-9.109315" z="-10.794625"/>
+		</min>
+		<width>
+			<coord x="21.589248" y="21.589248" z="21.589248"/>
+		</width>
+	</range>
+	<function type="curve">
+		<equation>(2*a)*(2+sin(a+t))/2</equation>
+		<red>1.000</red>
+		<green>0.550</green>
+		<blue>0.550</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<accuracy-radius double="0.020000"/>
+		<equation-x>(cos(a*(22/7))**2)</equation-x>
+		<equation-y>exp(a**2)</equation-y>
+		<equation-z>(4*a)-3</equation-z>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>0.000</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

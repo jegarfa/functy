@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=functy
+Comment=Functy is a 3D graph drawing application for generating vivid and immediate results.
+Exec=$snap.$app
+Path=~
+Icon=${snap}/meta/gui/functy.png
+Terminal=false
+Categories=Application;Graphics;Mathematics;
+

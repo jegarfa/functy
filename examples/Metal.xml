@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-8.396829" y="-10.823920" z="-27.209779"/>
+		</min>
+		<width>
+			<coord x="13.604890" y="13.604890" z="54.419558"/>
+		</width>
+	</range>
+	<function>
+		<equation>(1*(acos(cos(x)))-(1*acos(cos(y))))**2</equation>
+		<red>0.701</red>
+		<green>1.000</green>
+		<blue>0.714</blue>
+		<alpha>1.000</alpha>
+		<accuracy double="0.010000"/>
+	</function>
+</functy>
+

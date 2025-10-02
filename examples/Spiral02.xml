@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-1.500000" y="-1.500000" z="-1.500000"/>
+		</min>
+		<width>
+			<coord x="3.000000" y="3.000000" z="3.000000"/>
+		</width>
+	</range>
+	<function type="spherical">
+		<equation>1+(0.4*sin(t/7)*sin((p*(4+6*cos(t)))+(a*6)))</equation>
+		<red>1+sin((a*10-t)+((sin(p+t))*40))</red>
+		<green>(sin(t/3)+1)/2</green>
+		<blue>(sin(t/5)+1)/2</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.010000"/>
+		<centre-x>0.0</centre-x>
+		<centre-y>0.0</centre-y>
+		<centre-z>0.0</centre-z>
+	</function>
+	<function type="spherical">
+		<equation>0.7+0.4*(sin(t/8))</equation>
+		<red>sin(t)</red>
+		<green>sin(t/3)</green>
+		<blue>sin(t/5)</blue>
+		<alpha>0.7</alpha>
+		<accuracy double="0.010000"/>
+		<centre-x>0.0</centre-x>
+		<centre-y>0.0</centre-y>
+		<centre-z>0.0</centre-z>
+	</function>
+</functy>
+

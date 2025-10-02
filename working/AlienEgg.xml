@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-57.099044" y="-57.099044" z="-57.099044"/>
+		</min>
+		<width>
+			<coord x="114.198088" y="114.198088" z="114.198088"/>
+		</width>
+	</range>
+	<function type="spherical">
+		<equation>2*(2+(sin(cos(t+(3.14159265*sin(t)+a))+(p*((3+cos(t-1.5))/4))*10)**2)+(((6+cos(t))/7)*((2+sin(8*a))/3)**4))</equation>
+		<red>r/8</red>
+		<green>(3+sin((a)*8))/5</green>
+		<blue>(3+cos(a*8))/5</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.005000"/>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>2+(3*sin((5*t)-0.0)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="curve">
+		<equation>((1-a)**(1/8))*a*((2+sin(p*5))/5)</equation>
+		<red>1</red>
+		<green>1</green>
+		<blue>0</blue>
+		<alpha>0.5</alpha>
+		<accuracy double="0.010000"/>
+		<accuracy-radius double="0.020000"/>
+		<equation-x>8*sin((a+(t/2))*10)*cos(((a/2)+(t/(3)))*6)</equation-x>
+		<equation-y>8*cos((a+(t/2))*10)*cos(((a/2)+(t/(3)))*6)</equation-y>
+		<equation-z>8*sin(((a/2)+(t/(3)))*6)</equation-z>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>2+(3*sin((5*t)-0.0)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="curve">
+		<equation>((1-a)**(1/8))*a*((2+sin(p*5))/5)</equation>
+		<red>1</red>
+		<green>1</green>
+		<blue>0</blue>
+		<alpha>0.5</alpha>
+		<accuracy double="0.010000"/>
+		<accuracy-radius double="0.020000"/>
+		<equation-x>8*sin(((a/2)+(t/2))*8)</equation-x>
+		<equation-y>8*cos(((a/2)+(t/2))*8)</equation-y>
+		<equation-z>8*sin(((a/2)+(t/2))*10)</equation-z>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>2+(3*sin((5*t)-0.0)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="curve">
+		<equation>((1-a)**(1/8))*a*((2+sin(p*5))/5)</equation>
+		<red>1</red>
+		<green>1</green>
+		<blue>0</blue>
+		<alpha>0.5</alpha>
+		<accuracy double="0.010000"/>
+		<accuracy-radius double="0.020000"/>
+		<equation-x>8*sin(((a/3)+(t/2))*10)</equation-x>
+		<equation-y>8*cos(((a/3)+(t/2))*10)</equation-y>
+		<equation-z>8*sin(((a/3)+(t/(3)))*6)</equation-z>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>2+(3*sin((5*t)-0.0)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="cartesian">
+		<equation>(10*sin((5*t)-((((x)**2)+((y)**2))**(1/2)))/(10+(((x**2)+(y**2))**(1/2))))+(5*sin((10*t)-((((4*x)**2)+((4*y)**2))**(1/2)))/(10+(((x**4)+(y**4))**(1/2))))</equation>
+		<red>0.8</red>
+		<green>0.8</green>
+		<blue>1</blue>
+		<alpha>0.7</alpha>
+		<accuracy double="0.002000"/>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<equation>1</equation>
+		<red>0.799</red>
+		<green>0.405</green>
+		<blue>0.896</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>10</centre-x>
+		<centre-y>10</centre-y>
+		<centre-z>0.5+(5*sin((5*t)-2.1)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<equation>1</equation>
+		<red>0.423</red>
+		<green>0.938</green>
+		<blue>0.739</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>-20</centre-x>
+		<centre-y>7</centre-y>
+		<centre-z>0.5+(5*sin((5*t)-1.2)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<equation>1</equation>
+		<red>0.970</red>
+		<green>0.678</green>
+		<blue>0.452</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>-6</centre-x>
+		<centre-y>-25</centre-y>
+		<centre-z>0.5+(5*sin((5*t)-0.5)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<equation>1</equation>
+		<red>0.617</red>
+		<green>0.492</green>
+		<blue>0.991</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>10</centre-x>
+		<centre-y>-15</centre-y>
+		<centre-z>0.3+(5*sin((5*t)-5.0)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<equation>1</equation>
+		<red>0.540</red>
+		<green>1.000</green>
+		<blue>0.560</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>0</centre-x>
+		<centre-y>025</centre-y>
+		<centre-z>0.3+(5*sin((5*t)-5.3)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<equation>1</equation>
+		<red>0.996</red>
+		<green>0.509</green>
+		<blue>0.595</blue>
+		<alpha>1</alpha>
+		<accuracy double="0.020000"/>
+		<centre-x>-25</centre-x>
+		<centre-y>35</centre-y>
+		<centre-z>0.3+(5*sin((5*t)-5.0)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+	<function type="spherical">
+		<equation>1</equation>
+		<red>0.716</red>
+		<green>0.951</green>
+		<blue>0.432</blue>
+		<alpha>0.900</alpha>
+		<accuracy double="0.002000"/>
+		<centre-x>-33</centre-x>
+		<centre-y>-45</centre-y>
+		<centre-z>0.4+(5*sin((5*t)-4.7)/(10))</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

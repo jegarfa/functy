@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<functy>
+	<settings>
+		<show-axes bool="0"/>
+		<invert bool="0"/>
+		<wireframe bool="0"/>
+	</settings>
+	<range>
+		<min>
+			<coord x="-15.860845" y="-15.860845" z="-15.860845"/>
+		</min>
+		<width>
+			<coord x="31.721691" y="31.721691" z="31.721691"/>
+		</width>
+	</range>
+	<function type="spherical">
+		<equation>(sin(t+p*10)+3)*(sin((a+ p)*5) + 3)</equation>
+		<red>0.8 + (0.2*sin((t/2)+(p*7)))</red>
+		<green>0.8+(0.2*sin((t/3)+(a*6)))</green>
+		<blue>0.528</blue>
+		<alpha>1.000</alpha>
+		<accuracy double="0.010000"/>
+		<centre-x>0.000</centre-x>
+		<centre-y>0.000</centre-y>
+		<centre-z>0.000</centre-z>
+		<texture-file></texture-file>
+		<texture-x-scale>1.0</texture-x-scale>
+		<texture-y-scale>1.0</texture-y-scale>
+		<texture-x-offset>0.0</texture-x-offset>
+		<texture-y-offset>0.0</texture-y-offset>
+	</function>
+</functy>
+

@@ -1,0 +1,78 @@
+Functy-0.37: 6-August-2015
+  - Audio frequency animation extended to software as well as GPU-rendered functions.
+
+Functy-0.36: 5-August-2015
+  - Initial support for function animation using real-time audio frequency analysis.
+
+Functy-0.35: 10-May-2015
+  - Added config scripts
+
+Functy-0.34: 9-May-2015
+  - Export models in OpenVDB format.
+  - Fixed various bugs, including SVX export centre and control variable errors.
+
+Functy-0.33: 1-November-2014
+  - Export models in Simple Voxel (SVX) format for upload to Shapeways.
+  - Export animation as PNG frames.
+  - Progress dialogue added for long export operations.
+  - About dialogue added, including licence info.
+  - Menu item added to access help documentation.
+
+Functy-0.32: 2-October-2014
+  - Models can now be exported in STL format as well as PLY.
+  - Animation from can also be exported as both STL and PLY.
+  - Fixed a bug that caused binary PLY files to export corrupted on Windows.
+
+Functy-0.31: 28-September-2014
+  - Shadows can now be turned on and off, while still using shader rendering.
+  - Focus blur can also be tuurned on and off, while still using shaders.
+  - Controls added to set the focus blur depth of field.
+  - Buttons added to toggle the left and botton UI panels on and off.
+
+Functy-0.30: 20-August-2014
+  - Control variables added to allow extra variables with assigned values to be used.
+  - New single-window workbench-style UI.
+  - Focus blur and shadows to improve appearance of depth.
+  - Export multiple PLY files for external animation (e.g. using Blender).
+  - Improved Windows installer process with GTK libraries included in the standard MSI package.
+  - UI switched from libglade to GtkBuilder.
+  - Functions now entered using multiline text boxes for better editing control.
+  - New installer and UI graphics.
+
+Functy-0.25: 1-July-2012
+  - Added export to Stanford Triangle Format (PLY) file for use with modelling applications.
+  - Option to hide the button bar.
+  - Improved shader compatibility for functions (or their derivatives) that have exponents (pow).
+  - Improved shader colour handling.
+  - Allow the animation to be paused with the space bar.
+  - Improved performance when rendering the axes.
+  - Reversed orientation of exported spherical functions for better consistency.
+  - New example files.
+
+Functy-0.24: 29-May-2012
+  - Added full support for parametric curves with cylindrical cross-section, including both CPU and GPU rendering.
+  - Improved Windows installation package.
+  - New example files.
+
+Functy-0.23: 27-May-2012
+  - Added initial (CPU-only) support for parametric curves with cylindrical cross-section.
+
+Functy-0.22: 24-June-2009
+  - Fixed bug that caused variably-coloured spherical functions to be centred incorrectly.
+  - Added Windows binary installer.
+
+Functy-0.21: 15-June-2009
+  - Fixed bug that caused spherical functions to be centred incorrectly
+
+Functy-0.2: 14-June-2009
+  - Improved interface courtesy of Vadi.
+  - Improved function interpretation (especially negatives).
+  - Support for more functions (acos, cosh, abs, etc.).
+  - Function rendering in spherical as well as Cartesian coordinates.
+
+Functy-0.1: 26-April-2009
+	- First pre-release version built from SourceForge.net.
+
+Functy-0.1: 12-April-2009
+	- First pre-release version to use the autotools for the build process.
+
