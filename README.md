@@ -1,5 +1,16 @@
-Functy ReadMe
-=============
+
+
+This is a fork from the original repository [David Llewellyn-Jones / functy · GitLab](https://gitlab.com/flypig/functy)
+
+I do not mantein this repository. **I do not maintain this repository**. I am leaving it here for posterity in case anyone finds this project as interesting as I did.
+
+**Update**: I managed to make it work in Linux Mint 19.3 and in Debian 13 with AppImage
+
+
+
+---
+
+# Functy ReadMe
 
 Functy is a 3D graph drawing package. The emphasis for the application is to allow Cartesian and spherical functions to be plotted and altered quickly and easily.
 
@@ -37,11 +48,3 @@ I can be contacted via one of the following.
 
 * My website: http://www.flypig.co.uk
 * Email: at david@flypig.co.uk
-
-
-
----
-
- 
-
-**Update**: I managed to make it work in Linux Mint 19.3 and in Debian 13 with AppImage (see tags)
